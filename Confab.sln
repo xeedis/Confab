@@ -17,7 +17,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confab.Shared.Abstractions"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confab.Shared.Infrastructure", "src\Shared\Confab.Shared.Infrastructure\Confab.Shared.Infrastructure.csproj", "{C3F419F1-D39F-4B2C-827C-689E51941C8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confab.Bootsrapper", "src\Bootstrapper\Confab.Bootsrapper\Confab.Bootsrapper.csproj", "{ADA40E1F-6B46-431A-B8E7-AB5E0552D2E0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confab.Bootstrapper", "src\Bootstrapper\Confab.Bootstrapper\Confab.Bootstrapper.csproj", "{ADA40E1F-6B46-431A-B8E7-AB5E0552D2E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Conferences", "Conferences", "{79EA23C4-DF35-4774-8802-C3FE7CC1BE76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confab.Modules.Conferences.Api", "src\Modules\Confab.Modules.Conferences.Api\Confab.Modules.Conferences.Api.csproj", "{15389A9F-19B1-47A0-A589-8D48372F3740}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confab.Modules.Conferences.Core", "src\Modules\Confab.Modules.Conferences.Core\Confab.Modules.Conferences.Core.csproj", "{AD52EACA-832D-4FCA-9DBE-E7D37BA1A9DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,6 +46,14 @@ Global
 		{ADA40E1F-6B46-431A-B8E7-AB5E0552D2E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADA40E1F-6B46-431A-B8E7-AB5E0552D2E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ADA40E1F-6B46-431A-B8E7-AB5E0552D2E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15389A9F-19B1-47A0-A589-8D48372F3740}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15389A9F-19B1-47A0-A589-8D48372F3740}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15389A9F-19B1-47A0-A589-8D48372F3740}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15389A9F-19B1-47A0-A589-8D48372F3740}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD52EACA-832D-4FCA-9DBE-E7D37BA1A9DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD52EACA-832D-4FCA-9DBE-E7D37BA1A9DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD52EACA-832D-4FCA-9DBE-E7D37BA1A9DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD52EACA-832D-4FCA-9DBE-E7D37BA1A9DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{93E3FDEC-14D5-4E1A-B5BF-FD71BBCAA997} = {F77402F2-412A-4F4F-A7EB-3BBF44D294D6}
@@ -48,5 +62,8 @@ Global
 		{91AE9A9B-2018-4C6E-807C-81A2D965237D} = {43D02586-DE7C-488A-8861-CE965017F987}
 		{C3F419F1-D39F-4B2C-827C-689E51941C8C} = {43D02586-DE7C-488A-8861-CE965017F987}
 		{ADA40E1F-6B46-431A-B8E7-AB5E0552D2E0} = {93E3FDEC-14D5-4E1A-B5BF-FD71BBCAA997}
+		{79EA23C4-DF35-4774-8802-C3FE7CC1BE76} = {DF08FA0E-6926-4103-9BA5-5D48B55C9EB4}
+		{15389A9F-19B1-47A0-A589-8D48372F3740} = {79EA23C4-DF35-4774-8802-C3FE7CC1BE76}
+		{AD52EACA-832D-4FCA-9DBE-E7D37BA1A9DC} = {79EA23C4-DF35-4774-8802-C3FE7CC1BE76}
 	EndGlobalSection
 EndGlobal
