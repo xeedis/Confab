@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Confab.Modules.Conferences.Api.Controllers;
 
-[Route(BasePath + "/[controller]")]
+[Route(BasePath)]
 internal class HomeController : BaseController
 {
     [HttpGet]
