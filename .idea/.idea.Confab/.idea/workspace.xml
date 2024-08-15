@@ -15,17 +15,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7739ebc0-1fc8-4a52-9125-57c930725a26" name="Changes" comment="" />
+    <list default="true" id="7739ebc0-1fc8-4a52-9125-57c930725a26" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Abstractions/Exceptions/ExceptionResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Abstractions/Exceptions/IExceptionToResponseMapper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Exceptions/ErrorHandlerMiddleware.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Exceptions/ExceptionToResponseMapper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Exceptions/Extensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Confab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Confab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Extensions.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://D:/.NET/ModularnyMonolit/src/Modules/Confab.Modules.Conferences.Api/Controllers/BaseController.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2iEf70BpEyTVoG0n8rTcMFF2QNV" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -35,6 +53,7 @@
     &quot;.NET Launch Settings Profile.Confab.Bootstrapper: http.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -204,14 +223,41 @@
       <workItem from="1721258249740" duration="1315000" />
       <workItem from="1721337217179" duration="960000" />
       <workItem from="1721599115445" duration="2268000" />
-      <workItem from="1721684508505" duration="1712000" />
+      <workItem from="1721684508505" duration="2240000" />
+      <workItem from="1721687184074" duration="1880000" />
+      <workItem from="1721943415433" duration="2425000" />
+      <workItem from="1722599162243" duration="4878000" />
+      <workItem from="1723498845698" duration="3721000" />
     </task>
+    <task id="LOCAL-00001" summary="conferences controller added">
+      <option name="closed" value="true" />
+      <created>1723500336656</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1723500336656</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="conferences controller added" />
+    <option name="LAST_COMMIT_MESSAGE" value="conferences controller added" />
   </component>
 </project>
