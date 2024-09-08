@@ -1,0 +1,71 @@
+@url = http://localhost:5249/conferences-module
+@hostId = 73335db4-18cf-4451-8094-2d3059561b80
+
+@conferenceId = 73335db4-18cf-4451-8094-2d3059561b80
+
+###
+GET {{url}}
+
+###
+POST {{url}}/hosts
+Content-Type: application/json
+
+{
+    "name": "Host #1",
+    "description": "Lorem ipsum"
+}
+
+###
+GET {{url}}/hosts
+
+###
+GET {{url}}/hosts/{{hostId}}
+
+###
+PUT {{url}}/hosts/{{hostId}}
+Content-Type: application/json
+
+{
+    "name": "Host #1"
+}
+
+###
+DELETE {{url}}/hosts/{{hostId}}
+
+###
+POST {{url}}/conferences
+Content-Type: application/json
+
+{
+    "hostId": "{{hostId}}",
+    "name": "Conference #1",
+    "description": "Lorem ipsum",
+    "location": "Test 123",
+    "from": "2024-09-11",
+    "to": "2024-09-15",
+    "participantsLimit": 100,
+    "logoUrl":null
+}
+
+###
+GET {{url}}/conferences
+
+###
+GET {{url}}/conferences/{{conferenceId}}
+
+###
+PUT {{url}}/conferences/{{conferenceId}}
+Content-Type: application/json
+
+{
+    "name": "Conference #2",
+    "description": "Lorem ipsum",
+    "location": "Test 123",
+    "from": "2024-09-11",
+    "to": "2024-09-15",
+    "participantsLimit": 100,
+    "logoUrl":null
+}
+
+###
+DELETE {{url}}/conferences/{{conferenceId}}

@@ -1,10 +1,14 @@
+using System.Net;
+using Confab.Shared.Abstractions.Exceptions;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 
 namespace Confab.Shared.Infrastructure.Exceptions;
 
-internal class ErrorHandlerMiddleware(ILogger<ErrorHandlerMiddleware> logger) : IMiddleware
+internal class ErrorHandlerMiddleware(IExceptionCompositionRoot exceptionCompositionRoot
+    ,ILogger<ErrorHandlerMiddleware> logger) : IMiddleware
 {
+    private readonly IExceptionCompositionRoot _exceptionCompositionRoot = exceptionCompositionRoot;
     private readonly ILogger<ErrorHandlerMiddleware> _logger = logger;
 
     public async Task InvokeAsync(HttpContext context, RequestDelegate next)
@@ -22,8 +26,14 @@ internal class ErrorHandlerMiddleware(ILogger<ErrorHandlerMiddleware> logger) : 
 
     private async Task HandlerErrorAsync(HttpContext context, Exception exception)
     {
-        var errorResponse = new { code = exception.GetType().Name, message = exception.Message };
-        context.Response.StatusCode = 400;
+        var errorResponse = _exceptionCompositionRoot.Map(exception);
+        context.Response.StatusCode = (int)(errorResponse?.StatusCode ?? HttpStatusCode.InternalServerError);
+        var response = errorResponse?.Response;
+        if (response is null)
+        {
+            return;
+        }
+        
         await context.Response.WriteAsJsonAsync(errorResponse);
     }
 }
