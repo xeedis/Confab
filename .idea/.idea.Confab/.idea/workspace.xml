@@ -16,22 +16,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7739ebc0-1fc8-4a52-9125-57c930725a26" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Core/DAL/ConferencesDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Core/DAL/Configurations/ConferenceConfiguration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Core/DAL/Configurations/HostConfiguration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Core/DAL/Migrations/20240915215512_Conferences_Module_Init.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Core/DAL/Migrations/ConferencesDbContextModelSnapshot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Core/DAL/Repositories/ConferenceRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Core/DAL/Repositories/HostRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Postgres/Extensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Postgres/PostgresOptions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Services/AppInitializer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/ModuleLoader.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/ConferencesModule.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Abstractions/Modules/IModule.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Confab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Confab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/Confab.Bootstrapper.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/Confab.Bootstrapper.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Core/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Core/Extensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Confab.Shared.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Confab.Shared.Infrastructure.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Controllers/BaseController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Controllers/BaseController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Extensions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Shared/Confab.Shared.Abstractions/Confab.Shared.Abstractions.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Abstractions/Confab.Shared.Abstractions.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Extensions.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -296,7 +289,11 @@
       <workItem from="1726426431040" duration="595000" />
       <workItem from="1726430004070" duration="9000" />
       <workItem from="1726430021237" duration="996000" />
-      <workItem from="1726432485967" duration="4554000" />
+      <workItem from="1726432485967" duration="4748000" />
+      <workItem from="1726502465970" duration="31000" />
+      <workItem from="1726502504821" duration="7984000" />
+      <workItem from="1726610144237" duration="205000" />
+      <workItem from="1726610357181" duration="1232000" />
     </task>
     <task id="LOCAL-00001" summary="conferences controller added">
       <option name="closed" value="true" />
@@ -314,7 +311,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725832432118</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Ef added">
+      <option name="closed" value="true" />
+      <created>1726439053534</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1726439053534</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,62 +343,89 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="conferences controller added" />
     <MESSAGE value="Errors handler addded" />
-    <option name="LAST_COMMIT_MESSAGE" value="Errors handler addded" />
+    <MESSAGE value="Ef added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ef added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Services/AppInitializer.cs</url>
-          <line>15</line>
-          <properties documentPath="C:\.Net\ModularnyMonolit\src\Shared\Confab.Shared.Infrastructure\Services\AppInitializer.cs" containingFunctionPresentation="Method 'StartAsync'">
+          <url>file://$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/Program.cs</url>
+          <line>7</line>
+          <properties documentPath="C:\.Net\ModularnyMonolit\src\Bootstrapper\Confab.Bootstrapper\Program.cs" containingFunctionPresentation="">
             <startOffsets>
-              <option value="547" />
+              <option value="182" />
             </startOffsets>
             <endOffsets>
-              <option value="756" />
+              <option value="245" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Services/AppInitializer.cs</url>
-          <line>22</line>
-          <properties documentPath="C:\.Net\ModularnyMonolit\src\Shared\Confab.Shared.Infrastructure\Services\AppInitializer.cs" containingFunctionPresentation="Method 'StartAsync'">
+          <url>file://$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/Program.cs</url>
+          <line>8</line>
+          <properties documentPath="C:\.Net\ModularnyMonolit\src\Bootstrapper\Confab.Bootstrapper\Program.cs" containingFunctionPresentation="">
             <startOffsets>
-              <option value="886" />
+              <option value="246" />
             </startOffsets>
             <endOffsets>
-              <option value="963" />
+              <option value="310" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Services/AppInitializer.cs</url>
-          <line>23</line>
-          <properties documentPath="C:\.Net\ModularnyMonolit\src\Shared\Confab.Shared.Infrastructure\Services\AppInitializer.cs" containingFunctionPresentation="Method 'StartAsync'">
+          <url>file://$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/Program.cs</url>
+          <line>13</line>
+          <properties documentPath="C:\.Net\ModularnyMonolit\src\Bootstrapper\Confab.Bootstrapper\Program.cs" containingFunctionPresentation="">
             <startOffsets>
-              <option value="976" />
+              <option value="407" />
             </startOffsets>
             <endOffsets>
-              <option value="1033" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Services/AppInitializer.cs</url>
-          <line>25</line>
-          <properties documentPath="C:\.Net\ModularnyMonolit\src\Shared\Confab.Shared.Infrastructure\Services\AppInitializer.cs" containingFunctionPresentation="Method 'StartAsync'">
-            <startOffsets>
-              <option value="1048" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1049" />
+              <option value="439" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/Program.cs</url>
+          <line>15</line>
+          <properties documentPath="C:\.Net\ModularnyMonolit\src\Bootstrapper\Confab.Bootstrapper\Program.cs" containingFunctionPresentation="">
+            <startOffsets>
+              <option value="446" />
+            </startOffsets>
+            <endOffsets>
+              <option value="480" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/Program.cs</url>
+          <line>22</line>
+          <properties documentPath="C:\.Net\ModularnyMonolit\src\Bootstrapper\Confab.Bootstrapper\Program.cs" containingFunctionPresentation="">
+            <startOffsets>
+              <option value="571" />
+            </startOffsets>
+            <endOffsets>
+              <option value="595" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/Program.cs</url>
+          <line>25</line>
+          <properties documentPath="C:\.Net\ModularnyMonolit\src\Bootstrapper\Confab.Bootstrapper\Program.cs" containingFunctionPresentation="">
+            <startOffsets>
+              <option value="635" />
+            </startOffsets>
+            <endOffsets>
+              <option value="651" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
