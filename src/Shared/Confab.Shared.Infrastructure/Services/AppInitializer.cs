@@ -21,6 +21,12 @@ public class AppInitializer(IServiceProvider serviceProvider, ILogger<AppInitial
         foreach (var dbContextType in dbContextTypes)
         {
             var dbContext = scope.ServiceProvider.GetService(dbContextType) as DbContext;
+
+            if (dbContext is null)
+            {
+                continue;
+            }
+            
             await dbContext.Database.MigrateAsync(cancellationToken);
         }
     }

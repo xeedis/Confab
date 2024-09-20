@@ -16,16 +16,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7739ebc0-1fc8-4a52-9125-57c930725a26" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/ModuleLoader.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/ConferencesModule.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Abstractions/Modules/IModule.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/module.conferences.development.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/module.conferences.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/Extensions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Confab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Confab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/ModuleLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/ModuleLoader.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Controllers/BaseController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Controllers/BaseController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Extensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Shared/Confab.Shared.Abstractions/Confab.Shared.Abstractions.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Abstractions/Confab.Shared.Abstractions.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Confab.Modules.Conferences.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Confab.Modules.Conferences.Api.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Extensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Services/AppInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Services/AppInitializer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +52,8 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d9b17947bfd74f298878a2caaa2563b3ca710/ae/ab14ad63/Object.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/621526284d3e4868b98948aff942206525763e57e194a27623b66c384466/ServiceProviderServiceExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b9d37b8bc02c77cf8a3a84275d7fc92cee1cf86dd3c924f23ef5bb7fae17f99e/ConfigureHostBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bd1d5c50194fea68ff3559c160230b0ab50f5acf4ce3061bffd6d62958e2182/ExceptionDispatchInfo.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -293,7 +294,10 @@
       <workItem from="1726502465970" duration="31000" />
       <workItem from="1726502504821" duration="7984000" />
       <workItem from="1726610144237" duration="205000" />
-      <workItem from="1726610357181" duration="1232000" />
+      <workItem from="1726610357181" duration="2100000" />
+      <workItem from="1726697594037" duration="12000" />
+      <workItem from="1726737647676" duration="13922000" />
+      <workItem from="1726822967157" duration="3920000" />
     </task>
     <task id="LOCAL-00001" summary="conferences controller added">
       <option name="closed" value="true" />
@@ -319,7 +323,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726439053534</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="logic for loading modules">
+      <option name="closed" value="true" />
+      <created>1726612098849</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1726612098849</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,88 +356,76 @@
     <MESSAGE value="conferences controller added" />
     <MESSAGE value="Errors handler addded" />
     <MESSAGE value="Ef added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ef added" />
+    <MESSAGE value="logic for loading modules" />
+    <option name="LAST_COMMIT_MESSAGE" value="logic for loading modules" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/Program.cs</url>
-          <line>7</line>
-          <properties documentPath="C:\.Net\ModularnyMonolit\src\Bootstrapper\Confab.Bootstrapper\Program.cs" containingFunctionPresentation="">
+          <url>file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Extensions.cs</url>
+          <line>30</line>
+          <properties documentPath="C:\.Net\ModularnyMonolit\src\Shared\Confab.Shared.Infrastructure\Extensions.cs" containingFunctionPresentation="Method 'AddInfrastructure'">
             <startOffsets>
-              <option value="182" />
+              <option value="1194" />
             </startOffsets>
             <endOffsets>
-              <option value="245" />
+              <option value="1217" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/Program.cs</url>
-          <line>8</line>
-          <properties documentPath="C:\.Net\ModularnyMonolit\src\Bootstrapper\Confab.Bootstrapper\Program.cs" containingFunctionPresentation="">
+          <url>file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Extensions.cs</url>
+          <line>32</line>
+          <properties documentPath="C:\.Net\ModularnyMonolit\src\Shared\Confab.Shared.Infrastructure\Extensions.cs" containingFunctionPresentation="Method 'AddInfrastructure'">
             <startOffsets>
-              <option value="246" />
+              <option value="1256" />
             </startOffsets>
             <endOffsets>
-              <option value="310" />
+              <option value="1295" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/Program.cs</url>
-          <line>13</line>
-          <properties documentPath="C:\.Net\ModularnyMonolit\src\Bootstrapper\Confab.Bootstrapper\Program.cs" containingFunctionPresentation="">
+          <url>file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Extensions.cs</url>
+          <line>48</line>
+          <properties documentPath="C:\.Net\ModularnyMonolit\src\Shared\Confab.Shared.Infrastructure\Extensions.cs" containingFunctionPresentation="Lambda expression inside Method 'AddInfrastructure'">
             <startOffsets>
-              <option value="407" />
+              <option value="1927" />
             </startOffsets>
             <endOffsets>
-              <option value="439" />
+              <option value="1956" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="4" />
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/Program.cs</url>
-          <line>15</line>
-          <properties documentPath="C:\.Net\ModularnyMonolit\src\Bootstrapper\Confab.Bootstrapper\Program.cs" containingFunctionPresentation="">
+          <url>file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Extensions.cs</url>
+          <line>53</line>
+          <properties documentPath="C:\.Net\ModularnyMonolit\src\Shared\Confab.Shared.Infrastructure\Extensions.cs" containingFunctionPresentation="Lambda expression inside Method 'AddInfrastructure'">
             <startOffsets>
-              <option value="446" />
+              <option value="2065" />
             </startOffsets>
             <endOffsets>
-              <option value="480" />
+              <option value="2103" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="5" />
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/Program.cs</url>
-          <line>22</line>
-          <properties documentPath="C:\.Net\ModularnyMonolit\src\Bootstrapper\Confab.Bootstrapper\Program.cs" containingFunctionPresentation="">
+          <url>file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Extensions.cs</url>
+          <line>43</line>
+          <properties documentPath="C:\.Net\ModularnyMonolit\src\Shared\Confab.Shared.Infrastructure\Extensions.cs" containingFunctionPresentation="Lambda expression inside Method 'AddInfrastructure'">
             <startOffsets>
-              <option value="571" />
+              <option value="1608" />
             </startOffsets>
             <endOffsets>
-              <option value="595" />
+              <option value="1655" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/Program.cs</url>
-          <line>25</line>
-          <properties documentPath="C:\.Net\ModularnyMonolit\src\Bootstrapper\Confab.Bootstrapper\Program.cs" containingFunctionPresentation="">
-            <startOffsets>
-              <option value="635" />
-            </startOffsets>
-            <endOffsets>
-              <option value="651" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="7" />
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
