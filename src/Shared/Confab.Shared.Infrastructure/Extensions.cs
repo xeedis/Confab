@@ -3,6 +3,7 @@ using System.Runtime.CompilerServices;
 using Confab.Shared.Abstractions.Modules;
 using Confab.Shared.Abstractions.Time;
 using Confab.Shared.Infrastructure.Api;
+using Confab.Shared.Infrastructure.Auth;
 using Confab.Shared.Infrastructure.Exceptions;
 using Confab.Shared.Infrastructure.Services;
 using Confab.Shared.Infrastructure.Time;
@@ -37,6 +38,7 @@ internal static class Extensions
         
         services.AddErrorHandling();
         services.AddSingleton<IClock, UtcClock>();
+        services.AddAuth(modules);
         services.AddHostedService<AppInitializer>();
         services.AddControllers()
             .ConfigureApplicationPartManager(manager =>
@@ -63,7 +65,9 @@ internal static class Extensions
     public static WebApplication UseInfrastructure(this WebApplication app)
     {
         app.UseErrorHandling();
+        app.UseAuthentication();
         app.UseRouting();
+        app.UseAuthorization();
 
         return app;
     }

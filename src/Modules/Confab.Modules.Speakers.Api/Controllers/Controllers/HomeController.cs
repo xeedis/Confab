@@ -6,5 +6,5 @@ namespace Confab.Modules.Speakers.Api.Controllers.Controllers;
 internal class HomeController : BaseController
 {
     [HttpGet]
-    public ActionResult<string> Get() => "Conferences API";
+    public ActionResult<string> Get() => "Speakers API";
 }
