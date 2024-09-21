@@ -9,9 +9,9 @@ internal static class ModuleLoader
     {
         const string modulePart = "Confab.Modules.";
         var assemblies = AppDomain.CurrentDomain.GetAssemblies().ToList();
-        var locationds = assemblies.Where(x=>!x.IsDynamic).Select(x=>x.Location).ToArray();
+        var locations = assemblies.Where(x=>!x.IsDynamic).Select(x=>x.Location).ToArray();
         var files = Directory.GetFiles(AppDomain.CurrentDomain.BaseDirectory, "*.dll")
-            .Where(x=>!locationds.Contains(x, StringComparer.InvariantCultureIgnoreCase))
+            .Where(x=>!locations.Contains(x, StringComparer.InvariantCultureIgnoreCase))
             .ToList();
         
         var disabledModules = new List<string>();

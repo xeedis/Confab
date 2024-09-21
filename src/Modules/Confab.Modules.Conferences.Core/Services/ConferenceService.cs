@@ -34,8 +34,8 @@ internal class ConferenceService : IConferenceService
                 HostId = dto.HostId,
                 Name = dto.Name,
                 Description = dto.Description,
-                From = dto.From,
-                To = dto.To,
+                From = dto.From.ToUniversalTime(),
+                To = dto.To.ToUniversalTime(),
                 Location = dto.Location,
                 LogoUrl = dto.LogoUrl,
                 ParticipantsLimit = dto.ParticipantsLimit
@@ -77,8 +77,8 @@ internal class ConferenceService : IConferenceService
             conference.Description = dto.Description;
             conference.Location = dto.Location;
             conference.LogoUrl = dto.LogoUrl;
-            conference.From = dto.From;
-            conference.To = dto.To;
+            conference.From = dto.From.ToUniversalTime();
+            conference.To = dto.To.ToUniversalTime();
             conference.ParticipantsLimit = dto.ParticipantsLimit;
             await _conferenceRepository.UpdateAsync(conference);
         }
@@ -107,8 +107,8 @@ internal class ConferenceService : IConferenceService
                 HostName = conference.Host?.Name,
                 Name = conference.Name,
                 Location = conference.Location,
-                From = conference.From,
-                To = conference.To,
+                From = conference.From.ToUniversalTime(),
+                To = conference.To.ToUniversalTime(),
                 LogoUrl = conference.LogoUrl,
                 ParticipantsLimit = conference.ParticipantsLimit
             };

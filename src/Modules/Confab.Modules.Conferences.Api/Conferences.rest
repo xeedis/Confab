@@ -1,7 +1,7 @@
 @url = http://localhost:5249/conferences-module
-@hostId = 73335db4-18cf-4451-8094-2d3059561b80
+@hostId = 8c780fdf-7694-4893-9ef0-c091fc447763
 
-@conferenceId = 73335db4-18cf-4451-8094-2d3059561b80
+@conferenceId = 1577a6d9-2636-4558-9b53-32d9e214bba4
 
 ###
 GET {{url}}
@@ -26,7 +26,7 @@ PUT {{url}}/hosts/{{hostId}}
 Content-Type: application/json
 
 {
-    "name": "Host #1"
+    "name": "Host #2"
 }
 
 ###
@@ -41,8 +41,8 @@ Content-Type: application/json
     "name": "Conference #1",
     "description": "Lorem ipsum",
     "location": "Test 123",
-    "from": "2024-09-11",
-    "to": "2024-09-15",
+    "from": "2024-09-22",
+    "to": "2024-09-24",
     "participantsLimit": 100,
     "logoUrl":null
 }

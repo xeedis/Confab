@@ -16,15 +16,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7739ebc0-1fc8-4a52-9125-57c930725a26" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/module.conferences.development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/module.conferences.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/Extensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Speakers.Api/Confab.Modules.Speakers.Api.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Speakers.Api/Controllers/Controllers/BaseController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Speakers.Api/Controllers/Controllers/HomeController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Speakers.Api/Controllers/Controllers/SpeakersController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Speakers.Api/SpeakersModule.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Speakers.Api/module.speakers.development.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Speakers.Api/module.speakers.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Speakers.Core/Confab.Modules.Speakers.Core.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Speakers.Core/DAL/Configurations/SpeakerConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Speakers.Core/DAL/Repositories/ISpeakersRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Speakers.Core/DAL/Repositories/SpeakersRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Speakers.Core/DAL/SpeakersDbContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Speakers.Core/DTO/SpeakerDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Speakers.Core/Entities/Speaker.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Speakers.Core/Exceptions/SpeakerAlreadyExistsException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Speakers.Core/Exceptions/SpeakerNotFoundException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Speakers.Core/Extensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Speakers.Core/Mappers/Extensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Speakers.Core/Services/ISpeakersService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Speakers.Core/Services/SpeakersService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Confab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Confab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Confab.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Confab.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/Confab.Bootstrapper.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/Confab.Bootstrapper.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/ModuleLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/ModuleLoader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Confab.Modules.Conferences.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Confab.Modules.Conferences.Api.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Extensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Services/AppInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Services/AppInitializer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Conferences.rest" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Conferences.rest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Core/Services/ConferenceService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Core/Services/ConferenceService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,10 +69,15 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d9b17947bfd74f298878a2caaa2563b3ca710/ae/ab14ad63/Object.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6206b31a039c6b067d869fe0f25b838d39e3e111956e24f9d3d78c62a7e2f/MvcCoreMvcBuilderExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/621526284d3e4868b98948aff942206525763e57e194a27623b66c384466/ServiceProviderServiceExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b9d37b8bc02c77cf8a3a84275d7fc92cee1cf86dd3c924f23ef5bb7fae17f99e/ConfigureHostBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bd1d5c50194fea68ff3559c160230b0ab50f5acf4ce3061bffd6d62958e2182/ExceptionDispatchInfo.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -69,41 +91,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.Confab.Bootstrapper: http.executor&quot;: &quot;Debug&quot;,
-    &quot;HTTP Request.Conferences | #1.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.Conferences | #2.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.Conferences | #3.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.Conferences | #5.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.Conferences | #6.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;SolutionBuilderGeneralOptionsPage&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.Confab.Bootstrapper: http.executor": "Debug",
+    "HTTP Request.Conferences | #1.executor": "Run",
+    "HTTP Request.Conferences | #10.executor": "Run",
+    "HTTP Request.Conferences | #2.executor": "Run",
+    "HTTP Request.Conferences | #3.executor": "Run",
+    "HTTP Request.Conferences | #5.executor": "Run",
+    "HTTP Request.Conferences | #6.executor": "Run",
+    "HTTP Request.Conferences | #7.executor": "Run",
+    "HTTP Request.Conferences | #8.executor": "Run",
+    "HTTP Request.Conferences | #9.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "SolutionBuilderGeneralOptionsPage",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Confab.Bootstrapper: http">
-    <configuration name="Conferences | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Conferences.rest" requestIdentifier="#1" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="Conferences | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Conferences.rest" index="2" requestIdentifier="#2" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="Conferences | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Conferences.rest" index="3" requestIdentifier="#3" runType="Run single request">
+    <configuration name="Conferences | #10" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Conferences.rest" index="10" requestIdentifier="#10" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="Conferences | #5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Conferences.rest" index="5" requestIdentifier="#5" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="Conferences | #6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Conferences.rest" index="6" requestIdentifier="#6" runType="Run single request">
+    <configuration name="Conferences | #7" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Conferences.rest" index="7" requestIdentifier="#7" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="Conferences | #8" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Conferences.rest" index="8" requestIdentifier="#8" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="Conferences | #9" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Conferences.rest" index="9" requestIdentifier="#9" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="Confab.Bootstrapper: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
@@ -243,11 +269,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.Conferences | #6" />
+        <item itemvalue="HTTP Request.Conferences | #10" />
+        <item itemvalue="HTTP Request.Conferences | #9" />
+        <item itemvalue="HTTP Request.Conferences | #8" />
+        <item itemvalue="HTTP Request.Conferences | #7" />
         <item itemvalue="HTTP Request.Conferences | #5" />
-        <item itemvalue="HTTP Request.Conferences | #3" />
-        <item itemvalue="HTTP Request.Conferences | #2" />
-        <item itemvalue="HTTP Request.Conferences | #1" />
       </list>
     </recent_temporary>
   </component>
@@ -297,7 +323,9 @@
       <workItem from="1726610357181" duration="2100000" />
       <workItem from="1726697594037" duration="12000" />
       <workItem from="1726737647676" duration="13922000" />
-      <workItem from="1726822967157" duration="3920000" />
+      <workItem from="1726822967157" duration="14525000" />
+      <workItem from="1726867912833" duration="62000" />
+      <workItem from="1726867982133" duration="6785000" />
     </task>
     <task id="LOCAL-00001" summary="conferences controller added">
       <option name="closed" value="true" />
@@ -331,7 +359,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726612098849</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="configure modules">
+      <option name="closed" value="true" />
+      <created>1726839524001</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1726839524001</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,78 +393,8 @@
     <MESSAGE value="Errors handler addded" />
     <MESSAGE value="Ef added" />
     <MESSAGE value="logic for loading modules" />
-    <option name="LAST_COMMIT_MESSAGE" value="logic for loading modules" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Extensions.cs</url>
-          <line>30</line>
-          <properties documentPath="C:\.Net\ModularnyMonolit\src\Shared\Confab.Shared.Infrastructure\Extensions.cs" containingFunctionPresentation="Method 'AddInfrastructure'">
-            <startOffsets>
-              <option value="1194" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1217" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Extensions.cs</url>
-          <line>32</line>
-          <properties documentPath="C:\.Net\ModularnyMonolit\src\Shared\Confab.Shared.Infrastructure\Extensions.cs" containingFunctionPresentation="Method 'AddInfrastructure'">
-            <startOffsets>
-              <option value="1256" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1295" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Extensions.cs</url>
-          <line>48</line>
-          <properties documentPath="C:\.Net\ModularnyMonolit\src\Shared\Confab.Shared.Infrastructure\Extensions.cs" containingFunctionPresentation="Lambda expression inside Method 'AddInfrastructure'">
-            <startOffsets>
-              <option value="1927" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1956" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Extensions.cs</url>
-          <line>53</line>
-          <properties documentPath="C:\.Net\ModularnyMonolit\src\Shared\Confab.Shared.Infrastructure\Extensions.cs" containingFunctionPresentation="Lambda expression inside Method 'AddInfrastructure'">
-            <startOffsets>
-              <option value="2065" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2103" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Extensions.cs</url>
-          <line>43</line>
-          <properties documentPath="C:\.Net\ModularnyMonolit\src\Shared\Confab.Shared.Infrastructure\Extensions.cs" containingFunctionPresentation="Lambda expression inside Method 'AddInfrastructure'">
-            <startOffsets>
-              <option value="1608" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1655" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="configure modules" />
+    <option name="LAST_COMMIT_MESSAGE" value="configure modules" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
