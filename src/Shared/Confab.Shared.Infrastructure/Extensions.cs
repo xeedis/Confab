@@ -5,6 +5,7 @@ using Confab.Shared.Abstractions.Time;
 using Confab.Shared.Infrastructure.Api;
 using Confab.Shared.Infrastructure.Auth;
 using Confab.Shared.Infrastructure.Exceptions;
+using Confab.Shared.Infrastructure.Modules;
 using Confab.Shared.Infrastructure.Services;
 using Confab.Shared.Infrastructure.Time;
 using Microsoft.AspNetCore.Builder;
@@ -18,6 +19,7 @@ namespace Confab.Shared.Infrastructure;
 
 internal static class Extensions
 {
+    private const string CorsPolicy = "cors";
     public static IServiceCollection AddInfrastructure(this IServiceCollection services,
         IList<Assembly> assemblies, IList<IModule> modules)
     {
@@ -35,7 +37,18 @@ internal static class Extensions
                 }
             }
         }
-        
+
+        services.AddCors(cors =>
+        {
+            cors.AddPolicy(CorsPolicy, x =>
+            {
+                x.WithOrigins("*")
+                    .WithMethods("POST", "PUT", "DELETE")
+                    .WithHeaders("Content-Type", "Authorization");
+            });
+        });
+        services.AddModuleInfo(modules);
+        services.AddSwaggerGen();
         services.AddErrorHandling();
         services.AddSingleton<IClock, UtcClock>();
         services.AddAuth(modules);
@@ -64,7 +77,15 @@ internal static class Extensions
 
     public static WebApplication UseInfrastructure(this WebApplication app)
     {
+        app.UseCors();
         app.UseErrorHandling();
+        app.UseSwagger();
+        app.UseReDoc(reDoc =>
+        {
+            reDoc.RoutePrefix = "docs";
+            reDoc.SpecUrl("/swagger/v1/swagger.json");
+            reDoc.DocumentTitle = "Confab API";
+        });
         app.UseAuthentication();
         app.UseRouting();
         app.UseAuthorization();

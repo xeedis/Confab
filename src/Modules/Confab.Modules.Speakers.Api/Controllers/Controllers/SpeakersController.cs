@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Confab.Modules.Speakers.Core.DTO;
 using Confab.Modules.Speakers.Core.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Confab.Modules.Speakers.Api.Controllers.Controllers;
-
+[Authorize(Policy = Policy)]
 internal class SpeakersController(ISpeakersService speakersService) : BaseController
 {
+    private const string Policy = "speakers";
     private readonly ISpeakersService _speakersService = speakersService;
 
     [HttpGet("{id:guid}")]

@@ -33,6 +33,7 @@ logger.LogInformation($"Modules: {string.Join(", ", _modules.Select(x => x.Name)
 
 app.MapControllers();
 app.MapGet("/", () => "Confab API!");
+app.MapModuleInfo();
 
 _assemblies.Clear();
 _modules.Clear();

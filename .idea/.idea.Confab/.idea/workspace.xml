@@ -16,48 +16,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7739ebc0-1fc8-4a52-9125-57c930725a26" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Speakers.Api/Speakers.rest" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Users.Api/Confab.Modules.Users.Api.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Users.Api/Controllers/AccountController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Users.Api/Controllers/BaseController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Users.Api/Controllers/HomeController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Users.Api/UsersModule.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Users.Api/module.users.development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Users.Api/module.users.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Users.Core/Confab.Modules.Users.Core.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Users.Core/DAL/Configurations/UserConfiguration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Users.Core/DAL/Migrations/20240921212129_Users_Module_Init.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Users.Core/DAL/Migrations/UsersDbContextModelSnapshot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Users.Core/DAL/UsersDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Users.Core/DTO/AccountDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Users.Core/DTO/SignInDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Users.Core/DTO/SignUpDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Users.Core/Entities/User.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Users.Core/Exceptions/EmailInUseException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Users.Core/Exceptions/InvalidCredentialsException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Users.Core/Exceptions/UserNotActiveException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Users.Core/Extensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Users.Core/Repositories/IUserRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Users.Core/Repositories/UserRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Users.Core/Services/IIdentityService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Users.Core/Services/IdentityService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Abstractions/Auth/IAuthManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Abstractions/Auth/JsonWebToken.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Auth/AuthManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Auth/AuthOptions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Auth/DisabledAuthenticationPolicyEvaluator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Auth/Extensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Api/ProducesDefaultContentTypeAttribute.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/ModuleInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/ModuleInfoProvider.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Confab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Confab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Confab.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Confab.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/Confab.Bootstrapper.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/Confab.Bootstrapper.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/ConferencesModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/ConferencesModule.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modules/Confab.Modules.Speakers.Api/Controllers/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Speakers.Api/Controllers/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modules/Confab.Modules.Speakers.Api/SpeakersModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Speakers.Api/SpeakersModule.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Shared/Confab.Shared.Abstractions/Confab.Shared.Abstractions.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Abstractions/Confab.Shared.Abstractions.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Shared/Confab.Shared.Abstractions/Modules/IModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Abstractions/Modules/IModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Controllers/BaseController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Controllers/BaseController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Controllers/ConferencesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Controllers/ConferencesController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modules/Confab.Modules.Speakers.Api/Controllers/Controllers/SpeakersController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Speakers.Api/Controllers/Controllers/SpeakersController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Confab.Shared.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Confab.Shared.Infrastructure.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Extensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/Extensions.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +56,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cd79480462a3483b991d033234884520cb08/22/1e3addba/JwtBearerDefaults.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d9b17947bfd74f298878a2caaa2563b3ca710/ae/ab14ad63/Object.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4045ad381dc69b9a8c076afe4c122961b5a86158d8dd0c76c117243ce72b/TimeSpan.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5b20caa11edefc0a29fd9d51441ec5312aec93f13c72f85f79a7bf134b12/CorsMiddlewareExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6206b31a039c6b067d869fe0f25b838d39e3e111956e24f9d3d78c62a7e2f/MvcCoreMvcBuilderExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/621526284d3e4868b98948aff942206525763e57e194a27623b66c384466/ServiceProviderServiceExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/658ad1fa108317d78bcae889b6e4f9dd5327babb6582972f2dbeabf36dafa5/ServiceProvider.cs" root0="FORCE_HIGHLIGHTING" />
@@ -110,31 +80,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.Confab.Bootstrapper: http.executor&quot;: &quot;Debug&quot;,
-    &quot;HTTP Request.Conferences | #1.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.Conferences | #10.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.Conferences | #2.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.Conferences | #3.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.Conferences | #5.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.Conferences | #6.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.Conferences | #7.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.Conferences | #8.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.Conferences | #9.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;SolutionBuilderGeneralOptionsPage&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.Confab.Bootstrapper: http.executor": "Run",
+    "HTTP Request.Conferences | #1.executor": "Run",
+    "HTTP Request.Conferences | #10.executor": "Run",
+    "HTTP Request.Conferences | #2.executor": "Run",
+    "HTTP Request.Conferences | #3.executor": "Run",
+    "HTTP Request.Conferences | #5.executor": "Run",
+    "HTTP Request.Conferences | #6.executor": "Run",
+    "HTTP Request.Conferences | #7.executor": "Run",
+    "HTTP Request.Conferences | #8.executor": "Run",
+    "HTTP Request.Conferences | #9.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Confab.Bootstrapper: http">
     <configuration name="Conferences | #10" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Conferences.rest" index="10" requestIdentifier="#10" runType="Run single request">
       <method v="2" />
@@ -346,7 +316,9 @@
       <workItem from="1726867912833" duration="62000" />
       <workItem from="1726867982133" duration="8682000" />
       <workItem from="1726913121698" duration="10405000" />
-      <workItem from="1726944165588" duration="4375000" />
+      <workItem from="1726944165588" duration="10066000" />
+      <workItem from="1727028670309" duration="32000" />
+      <workItem from="1727028711547" duration="6142000" />
     </task>
     <task id="LOCAL-00001" summary="conferences controller added">
       <option name="closed" value="true" />
@@ -396,7 +368,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726876929185</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Users module added">
+      <option name="closed" value="true" />
+      <created>1726954349177</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1726954349177</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -424,7 +404,8 @@
     <MESSAGE value="logic for loading modules" />
     <MESSAGE value="configure modules" />
     <MESSAGE value="speakers module added" />
-    <option name="LAST_COMMIT_MESSAGE" value="speakers module added" />
+    <MESSAGE value="Users module added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Users module added" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

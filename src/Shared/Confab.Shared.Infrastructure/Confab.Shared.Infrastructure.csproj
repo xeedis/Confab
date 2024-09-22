@@ -21,5 +21,9 @@
       <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
       <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
       <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.4" />
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="6.7.3" />
+      <PackageReference Include="Swashbuckle.AspNetCore.ReDoc" Version="6.7.3" />
+      <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.7.3" />
+      <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.7.3" />
     </ItemGroup>
 </Project>
