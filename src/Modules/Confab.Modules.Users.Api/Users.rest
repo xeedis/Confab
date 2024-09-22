@@ -1,6 +1,6 @@
 @url = http://localhost:5249/users-module 
-@email = user2@confab.io 
-@password = secret 
+@email = user3@confab.io 
+@password = secret1
 @role = user
 @accessToken = secret
 
@@ -12,7 +12,7 @@ GET {{url}}/account
 Authorization: Bearer {{accessToken}}
 
 ### 
-POST {{url}}/account/sign-up 
+POST {{url}}/account/sign-up
 Content-Type: application/json
 
 {

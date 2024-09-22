@@ -1,9 +1,11 @@
 using System.Reflection;
 using System.Runtime.CompilerServices;
+using Confab.Shared.Abstractions.Contexts;
 using Confab.Shared.Abstractions.Modules;
 using Confab.Shared.Abstractions.Time;
 using Confab.Shared.Infrastructure.Api;
 using Confab.Shared.Infrastructure.Auth;
+using Confab.Shared.Infrastructure.Contexts;
 using Confab.Shared.Infrastructure.Exceptions;
 using Confab.Shared.Infrastructure.Modules;
 using Confab.Shared.Infrastructure.Services;
@@ -47,6 +49,9 @@ internal static class Extensions
                     .WithHeaders("Content-Type", "Authorization");
             });
         });
+        services.AddSingleton<IContextFactory, ContextFactory>();
+        services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+        services.AddTransient(sp => sp.GetRequiredService<IContextFactory>().Create());
         services.AddModuleInfo(modules);
         services.AddSwaggerGen();
         services.AddErrorHandling();
