@@ -16,52 +16,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7739ebc0-1fc8-4a52-9125-57c930725a26" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Api/Confab.Modules.Tickets.Api.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Api/Controllers/BaseController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Api/Controllers/HomeController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Api/Controllers/SalesController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Api/Controllers/TicketsController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Api/Tickets.rest" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Api/TicketsModule.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Api/module.tickets.development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Api/module.tickets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/Confab.Modules.Tickets.Core.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/DAL/Configurations/ConferenceConfiguration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/DAL/Configurations/TicketConfiguration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/DAL/Configurations/TicketSaleConfiguration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/DAL/Repositories/ConferenceRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/DAL/Repositories/TicketRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/DAL/Repositories/TicketSaleRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/DAL/TicketsDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/DTO/ConferenceDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/DTO/TicketDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/DTO/TicketSaleDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/DTO/TicketSaleInfoDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/Entities/Conference.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/Entities/Ticket.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/Entities/TicketSale.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/Exceptions/ConferenceNotFoundException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/Exceptions/TicketAlreadyPurchasedException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/Exceptions/TicketSaleUnavailableException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/Exceptions/TicketsUnavailableException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/Exceptions/TooManyTicketsException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/Extensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/Repositories/IConferenceRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/Repositories/ITicketRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/Repositories/ITicketSaleRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/Services/ITicketGenerator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/Services/ITicketSaleService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/Services/ITicketService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/Services/TicketGenerator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/Services/TicketSaleService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/Services/TicketService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Messages/Confab.Modules.Conferences.Messages.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Messages/Events/ConferenceCreated.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/Events/External/Handlers/ConferenceCreatedHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Abstractions/Events/IEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Abstractions/Events/IEventDispatcher.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Abstractions/Events/IEventHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Events/EventDispatcher.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Events/Extensions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Confab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Confab/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Confab.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Confab.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/Confab.Bootstrapper.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/Confab.Bootstrapper.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modules/Confab.Modules.Speakers.Api/Controllers/Controllers/BaseController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Speakers.Api/Controllers/BaseController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modules/Confab.Modules.Speakers.Api/Controllers/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Speakers.Api/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modules/Confab.Modules.Speakers.Api/Controllers/Controllers/SpeakersController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Speakers.Api/Controllers/SpeakersController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modules/Confab.Modules.Users.Core/Confab.Modules.Users.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Users.Core/Confab.Modules.Users.Core.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Conferences.rest" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Conferences.rest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Controllers/ConferencesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Controllers/ConferencesController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Core/Confab.Modules.Conferences.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Core/Confab.Modules.Conferences.Core.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Core/Services/ConferenceService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Core/Services/ConferenceService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/Confab.Modules.Tickets.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/Confab.Modules.Tickets.Core.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Confab.Shared.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Confab.Shared.Infrastructure.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Extensions.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -363,7 +334,10 @@
       <workItem from="1726944165588" duration="10066000" />
       <workItem from="1727028670309" duration="32000" />
       <workItem from="1727028711547" duration="8524000" />
-      <workItem from="1727116225277" duration="12817000" />
+      <workItem from="1727116225277" duration="14629000" />
+      <workItem from="1727177217918" duration="594000" />
+      <workItem from="1727179104188" duration="593000" />
+      <workItem from="1727182361883" duration="2025000" />
     </task>
     <task id="LOCAL-00001" summary="conferences controller added">
       <option name="closed" value="true" />
@@ -437,7 +411,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727046432235</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Tickets module added">
+      <option name="closed" value="true" />
+      <created>1727136513706</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1727136513706</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -468,49 +450,115 @@
     <MESSAGE value="Users module added" />
     <MESSAGE value="documentation added + modules info" />
     <MESSAGE value="automatic context added" />
-    <option name="LAST_COMMIT_MESSAGE" value="automatic context added" />
+    <MESSAGE value="Tickets module added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tickets module added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Contexts/ContextFactory.cs</url>
-          <line>13</line>
-          <properties documentPath="C:\.Net\ModularnyMonolit\src\Shared\Confab.Shared.Infrastructure\Contexts\ContextFactory.cs" containingFunctionPresentation="Method 'Create'">
+          <url>file://$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Core/Services/ConferenceService.cs</url>
+          <line>48</line>
+          <properties documentPath="C:\.Net\ModularnyMonolit\src\Modules\Confab.Modules.Conferences.Core\Services\ConferenceService.cs" containingFunctionPresentation="Method 'AddAsync'">
             <startOffsets>
-              <option value="410" />
+              <option value="1971" />
             </startOffsets>
             <endOffsets>
-              <option value="480" />
+              <option value="2141" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Contexts/IdentityContext.cs</url>
-          <line>13</line>
-          <properties documentPath="C:\.Net\ModularnyMonolit\src\Shared\Confab.Shared.Infrastructure\Contexts\IdentityContext.cs" containingFunctionPresentation="Constructor 'IdentityContext'">
+          <url>file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Events/EventDispatcher.cs</url>
+          <line>11</line>
+          <properties documentPath="C:\.Net\ModularnyMonolit\src\Shared\Confab.Shared.Infrastructure\Events\EventDispatcher.cs" containingFunctionPresentation="Method 'PublishAsync'">
             <startOffsets>
               <option value="407" />
             </startOffsets>
             <endOffsets>
-              <option value="408" />
+              <option value="456" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="4" />
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/ModuleLoader.cs</url>
-          <line>23</line>
-          <properties documentPath="C:\.Net\ModularnyMonolit\src\Bootstrapper\Confab.Bootstrapper\ModuleLoader.cs" containingFunctionPresentation="Method 'LoadAllAssemblies'">
+          <url>file://$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/Events/External/Handlers/ConferenceCreatedHandler.cs</url>
+          <line>15</line>
+          <properties documentPath="C:\.Net\ModularnyMonolit\src\Modules\Confab.Modules.Tickets.Core\Events\External\Handlers\ConferenceCreatedHandler.cs" containingFunctionPresentation="Method 'HandleAsync'">
             <startOffsets>
-              <option value="992" />
+              <option value="523" />
             </startOffsets>
             <endOffsets>
-              <option value="1004" />
+              <option value="753" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/Events/External/Handlers/ConferenceCreatedHandler.cs</url>
+          <line>25</line>
+          <properties documentPath="C:\.Net\ModularnyMonolit\src\Modules\Confab.Modules.Tickets.Core\Events\External\Handlers\ConferenceCreatedHandler.cs" containingFunctionPresentation="Method 'HandleAsync'">
+            <startOffsets>
+              <option value="818" />
+            </startOffsets>
+            <endOffsets>
+              <option value="884" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Core/Services/ConferenceService.cs</url>
+          <line>70</line>
+          <properties documentPath="C:\.Net\ModularnyMonolit\src\Modules\Confab.Modules.Conferences.Core\Services\ConferenceService.cs" containingFunctionPresentation="Method 'BrowseAsync'">
+            <startOffsets>
+              <option value="2711" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2766" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Core/Services/ConferenceService.cs</url>
+          <line>67</line>
+          <properties documentPath="C:\.Net\ModularnyMonolit\src\Modules\Confab.Modules.Conferences.Core\Services\ConferenceService.cs" containingFunctionPresentation="Method 'BrowseAsync'">
+            <startOffsets>
+              <option value="2623" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2624" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Controllers/ConferencesController.cs</url>
+          <line>25</line>
+          <properties documentPath="C:\.Net\ModularnyMonolit\src\Modules\Confab.Modules.Conferences.Api\Controllers\ConferencesController.cs" containingFunctionPresentation="Method 'BrowseAsync'">
+            <startOffsets>
+              <option value="983" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1025" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Controllers/ConferencesController.cs</url>
+          <line>33</line>
+          <properties documentPath="C:\.Net\ModularnyMonolit\src\Modules\Confab.Modules.Conferences.Api\Controllers\ConferencesController.cs" containingFunctionPresentation="Method 'AddAsync'">
+            <startOffsets>
+              <option value="1356" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1357" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

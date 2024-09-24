@@ -3,6 +3,8 @@
 
 @conferenceId = 1577a6d9-2636-4558-9b53-32d9e214bba4
 
+@accessToken = eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1NmIwODM0Mi01ZWQzLTRkZmEtOWViNi0yNDhlNDBlYThjZmIiLCJ1bmlxdWVfbmFtZSI6IjU2YjA4MzQyLTVlZDMtNGRmYS05ZWI2LTI0OGU0MGVhOGNmYiIsImp0aSI6IjA2MTU4ZTA3LTI1MTktNGM0Ni04MjQ2LTNkMWMwYTljYTNkYiIsImlhdCI6IjE3MjcxODQ0MTgxMTIiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJ1c2VyIiwicGVybWlzc2lvbnMiOlsiY29uZmVyZW5jZXMiLCJob3N0cyIsInNwZWFrZXJzIiwidGlja2V0cyIsInVzZXJzIl0sIm5iZiI6MTcyNzE4NDQxOCwiZXhwIjoxNzI3MjIwNDE4LCJpc3MiOiJjb25mYWIifQ.59-EVdwaz25KCodl2H-Tx1iNHJi_HYZCL1qPKqIdbZs
+
 ###
 GET {{url}}
 
@@ -23,6 +25,7 @@ GET {{url}}/hosts/{{hostId}}
 
 ###
 PUT {{url}}/hosts/{{hostId}}
+Authorization: Bearer {{accessToken}}
 Content-Type: application/json
 
 {
@@ -31,9 +34,11 @@ Content-Type: application/json
 
 ###
 DELETE {{url}}/hosts/{{hostId}}
+Authorization: Bearer {{accessToken}}
 
 ###
 POST {{url}}/conferences
+Authorization: Bearer {{accessToken}}
 Content-Type: application/json
 
 {

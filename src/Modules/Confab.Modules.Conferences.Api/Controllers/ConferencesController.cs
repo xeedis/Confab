@@ -9,7 +9,7 @@ namespace Confab.Modules.Conferences.Api.Controllers;
 [Authorize(Policy = Policy)]
 internal class ConferencesController(IConferenceService conferenceService) : BaseController
 {
-    private const string Policy = "conference";
+    private const string Policy = "conferences";
     private readonly IConferenceService _conferenceService = conferenceService;
 
     [HttpGet("{id:guid}")]
