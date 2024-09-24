@@ -15,24 +15,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7739ebc0-1fc8-4a52-9125-57c930725a26" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Messages/Confab.Modules.Conferences.Messages.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Messages/Events/ConferenceCreated.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/Events/External/Handlers/ConferenceCreatedHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Abstractions/Events/IEvent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Abstractions/Events/IEventDispatcher.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Abstractions/Events/IEventHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Events/EventDispatcher.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Events/Extensions.cs" afterDir="false" />
+    <list default="true" id="7739ebc0-1fc8-4a52-9125-57c930725a26" name="Changes" comment="Events initialized">
+      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/Events/External/ConferenceCreated.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Abstractions/Modules/IModuleClient.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/IModuleRegistry.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/IModuleSerializer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/JsonModuleSerializer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/ModuleBroadcastRegistration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/ModuleClient.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/ModuleRegistry.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Confab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Confab/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Confab.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Confab.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Conferences.rest" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Conferences.rest" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Controllers/ConferencesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Controllers/ConferencesController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Core/Confab.Modules.Conferences.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Core/Confab.Modules.Conferences.Core.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Core/Services/ConferenceService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Core/Services/ConferenceService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Messages/Events/ConferenceCreated.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Core/Events/ConferenceCreated.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/Confab.Modules.Tickets.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/Confab.Modules.Tickets.Core.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Confab.Shared.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Confab.Shared.Infrastructure.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/Events/External/Handlers/ConferenceCreatedHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/Events/External/Handlers/ConferenceCreatedHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Extensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/Extensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/ModuleInfoProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/ModuleInfoProvider.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +67,11 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/Bootstrapper/Confab.Bootstrapper/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/IModuleRegistry.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/ModuleBroadcastRegistration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/ModuleClient.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/ModuleRegistry.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cd79480462a3483b991d033234884520cb08/22/1e3addba/JwtBearerDefaults.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d9b17947bfd74f298878a2caaa2563b3ca710/ae/ab14ad63/Object.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4045ad381dc69b9a8c076afe4c122961b5a86158d8dd0c76c117243ce72b/TimeSpan.cs" root0="FORCE_HIGHLIGHTING" />
@@ -337,7 +343,7 @@
       <workItem from="1727116225277" duration="14629000" />
       <workItem from="1727177217918" duration="594000" />
       <workItem from="1727179104188" duration="593000" />
-      <workItem from="1727182361883" duration="2025000" />
+      <workItem from="1727182361883" duration="9824000" />
     </task>
     <task id="LOCAL-00001" summary="conferences controller added">
       <option name="closed" value="true" />
@@ -419,7 +425,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727136513706</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Events initialized">
+      <option name="closed" value="true" />
+      <created>1727185095121</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1727185095121</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -451,20 +465,21 @@
     <MESSAGE value="documentation added + modules info" />
     <MESSAGE value="automatic context added" />
     <MESSAGE value="Tickets module added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tickets module added" />
+    <MESSAGE value="Events initialized" />
+    <option name="LAST_COMMIT_MESSAGE" value="Events initialized" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Core/Services/ConferenceService.cs</url>
-          <line>48</line>
+          <line>49</line>
           <properties documentPath="C:\.Net\ModularnyMonolit\src\Modules\Confab.Modules.Conferences.Core\Services\ConferenceService.cs" containingFunctionPresentation="Method 'AddAsync'">
             <startOffsets>
-              <option value="1971" />
+              <option value="1991" />
             </startOffsets>
             <endOffsets>
-              <option value="2141" />
+              <option value="2158" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="5" />
@@ -484,81 +499,146 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/Events/External/Handlers/ConferenceCreatedHandler.cs</url>
-          <line>15</line>
+          <line>14</line>
           <properties documentPath="C:\.Net\ModularnyMonolit\src\Modules\Confab.Modules.Tickets.Core\Events\External\Handlers\ConferenceCreatedHandler.cs" containingFunctionPresentation="Method 'HandleAsync'">
             <startOffsets>
-              <option value="523" />
+              <option value="473" />
             </startOffsets>
             <endOffsets>
-              <option value="753" />
+              <option value="703" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/Events/External/Handlers/ConferenceCreatedHandler.cs</url>
-          <line>25</line>
+          <line>24</line>
           <properties documentPath="C:\.Net\ModularnyMonolit\src\Modules\Confab.Modules.Tickets.Core\Events\External\Handlers\ConferenceCreatedHandler.cs" containingFunctionPresentation="Method 'HandleAsync'">
             <startOffsets>
-              <option value="818" />
+              <option value="768" />
             </startOffsets>
             <endOffsets>
-              <option value="884" />
+              <option value="834" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Core/Services/ConferenceService.cs</url>
-          <line>70</line>
-          <properties documentPath="C:\.Net\ModularnyMonolit\src\Modules\Confab.Modules.Conferences.Core\Services\ConferenceService.cs" containingFunctionPresentation="Method 'BrowseAsync'">
+          <url>file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/Extensions.cs</url>
+          <line>75</line>
+          <properties documentPath="C:\.Net\ModularnyMonolit\src\Shared\Confab.Shared.Infrastructure\Modules\Extensions.cs" containingFunctionPresentation="Lambda expression inside Method 'AddModuleRegistry'">
             <startOffsets>
-              <option value="2711" />
+              <option value="2829" />
             </startOffsets>
             <endOffsets>
-              <option value="2766" />
+              <option value="2881" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="9" />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/Extensions.cs</url>
+          <line>85</line>
+          <properties documentPath="C:\.Net\ModularnyMonolit\src\Shared\Confab.Shared.Infrastructure\Modules\Extensions.cs" containingFunctionPresentation="Lambda expression inside Method 'AddModuleRegistry'">
+            <startOffsets>
+              <option value="3235" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3251" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/Extensions.cs</url>
+          <line>79</line>
+          <properties documentPath="C:\.Net\ModularnyMonolit\src\Shared\Confab.Shared.Infrastructure\Modules\Extensions.cs" containingFunctionPresentation="Lambda expression inside Method 'AddModuleRegistry'">
+            <startOffsets>
+              <option value="2959" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3207" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Core/Services/ConferenceService.cs</url>
-          <line>67</line>
-          <properties documentPath="C:\.Net\ModularnyMonolit\src\Modules\Confab.Modules.Conferences.Core\Services\ConferenceService.cs" containingFunctionPresentation="Method 'BrowseAsync'">
+          <line>34</line>
+          <properties documentPath="C:\.Net\ModularnyMonolit\src\Modules\Confab.Modules.Conferences.Core\Services\ConferenceService.cs" containingFunctionPresentation="Method 'AddAsync'">
             <startOffsets>
-              <option value="2623" />
+              <option value="1424" />
             </startOffsets>
             <endOffsets>
-              <option value="2624" />
+              <option value="1448" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="10" />
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Controllers/ConferencesController.cs</url>
-          <line>25</line>
-          <properties documentPath="C:\.Net\ModularnyMonolit\src\Modules\Confab.Modules.Conferences.Api\Controllers\ConferencesController.cs" containingFunctionPresentation="Method 'BrowseAsync'">
+          <url>file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/ModuleClient.cs</url>
+          <line>11</line>
+          <properties documentPath="C:\.Net\ModularnyMonolit\src\Shared\Confab.Shared.Infrastructure\Modules\ModuleClient.cs" containingFunctionPresentation="Method 'PublishAsync'">
             <startOffsets>
-              <option value="983" />
+              <option value="360" />
             </startOffsets>
             <endOffsets>
-              <option value="1025" />
+              <option value="393" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="11" />
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Api/Controllers/ConferencesController.cs</url>
-          <line>33</line>
-          <properties documentPath="C:\.Net\ModularnyMonolit\src\Modules\Confab.Modules.Conferences.Api\Controllers\ConferencesController.cs" containingFunctionPresentation="Method 'AddAsync'">
+          <url>file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/ModuleClient.cs</url>
+          <line>12</line>
+          <properties documentPath="C:\.Net\ModularnyMonolit\src\Shared\Confab.Shared.Infrastructure\Modules\ModuleClient.cs" containingFunctionPresentation="Method 'PublishAsync'">
             <startOffsets>
-              <option value="1356" />
+              <option value="402" />
             </startOffsets>
             <endOffsets>
-              <option value="1357" />
+              <option value="468" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="12" />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/ModuleClient.cs</url>
+          <line>14</line>
+          <properties documentPath="C:\.Net\ModularnyMonolit\src\Shared\Confab.Shared.Infrastructure\Modules\ModuleClient.cs" containingFunctionPresentation="Method 'PublishAsync'">
+            <startOffsets>
+              <option value="478" />
+            </startOffsets>
+            <endOffsets>
+              <option value="507" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/ModuleClient.cs</url>
+          <line>19</line>
+          <properties documentPath="C:\.Net\ModularnyMonolit\src\Shared\Confab.Shared.Infrastructure\Modules\ModuleClient.cs" containingFunctionPresentation="Method 'PublishAsync'">
+            <startOffsets>
+              <option value="637" />
+            </startOffsets>
+            <endOffsets>
+              <option value="709" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/ModuleClient.cs</url>
+          <line>20</line>
+          <properties documentPath="C:\.Net\ModularnyMonolit\src\Shared\Confab.Shared.Infrastructure\Modules\ModuleClient.cs" containingFunctionPresentation="Method 'PublishAsync'">
+            <startOffsets>
+              <option value="722" />
+            </startOffsets>
+            <endOffsets>
+              <option value="757" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
