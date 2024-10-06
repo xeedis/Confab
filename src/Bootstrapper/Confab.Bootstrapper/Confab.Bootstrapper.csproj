@@ -6,6 +6,7 @@
     </PropertyGroup>
     
     <ItemGroup>
+       <ProjectReference Include="..\..\Modules\Agendas\Confab.Modules.Agendas.Api\Confab.Modules.Agendas.Api.csproj" />
        <ProjectReference Include="..\..\Modules\Confab.Modules.Conferences.Api\Confab.Modules.Conferences.Api.csproj" />
        <ProjectReference Include="..\..\Modules\Confab.Modules.Speakers.Api\Confab.Modules.Speakers.Api.csproj" />
        <ProjectReference Include="..\..\Modules\Confab.Modules.Users.Api\Confab.Modules.Users.Api.csproj" />
