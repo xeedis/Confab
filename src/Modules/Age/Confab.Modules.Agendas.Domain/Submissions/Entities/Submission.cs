@@ -35,13 +35,13 @@ public sealed class Submission : AggregateRoot
         => (Id, ConferenceId) = (id, conferenceId);
 
     public static Submission Create(AggregateId id, ConferenceId conferenceId, string title, string description,
-        int level, string status, IEnumerable<string> tags, ICollection<Speaker> speakers)
+        int level, IEnumerable<string> tags, ICollection<Speaker> speakers)
     {
         var submission = new Submission(id, conferenceId);
         submission.ChangeTitle(title);
         submission.ChangeDescription(description);
         submission.ChangeLevel(level);
-        submission.Status = status;
+        submission.Status = SubmissionStatus.Pending;
         submission.Tags = tags;
         submission.ChangeSpeakers(speakers);
         submission.ClearEvents();
