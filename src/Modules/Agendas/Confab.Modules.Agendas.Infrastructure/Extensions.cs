@@ -1,6 +1,6 @@
 using Confab.Modules.Agendas.Domain.Submissions.Repositories;
-using Confab.Modules.Agendas.Infrastructure.DAL;
-using Confab.Modules.Agendas.Infrastructure.DAL.Repositories;
+using Confab.Modules.Agendas.Infrastructure.EF;
+using Confab.Modules.Agendas.Infrastructure.EF.Repositories;
 using Confab.Shared.Infrastructure.Postgres;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -12,6 +12,7 @@ public static class Extensions
     {
         return services
             .AddPostgres<AgendasDbContext>()
+            .AddScoped<ISpeakerRepository, SpeakerRepository>()
             .AddScoped<ISubmissionRepository, SubmissionRepository>();
     }
 }

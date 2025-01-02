@@ -1,7 +1,7 @@
 {
-  "agendas" : {
-    "module" : {
-      "name" : "Agendas",
+  "agendas": {
+    "module": {
+      "name": "Agendas",
       "enabled": true
     }
   }

@@ -12,6 +12,11 @@ internal class AgendasModule : IModule
     public const string BasePath = "agendas-module";
     public string Name => "Agendas";
     public string Path => BasePath;
+    public IEnumerable<string> Policies { get; } =
+    [
+        "agendas", "submissions"
+    ];
+    
     public void Register(IServiceCollection services)
     {
         services.AddDomain()
@@ -21,6 +26,5 @@ internal class AgendasModule : IModule
 
     public void Use(IApplicationBuilder app)
     {
-        throw new NotImplementedException();
     }
 }

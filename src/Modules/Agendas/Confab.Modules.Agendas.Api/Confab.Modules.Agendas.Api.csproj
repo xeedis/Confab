@@ -7,7 +7,19 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\Confab.Modules.Agendas.Domain\Confab.Modules.Agendas.Domain.csproj" />
       <ProjectReference Include="..\Confab.Modules.Agendas.Infrastructure\Confab.Modules.Agendas.Infrastructure.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Remove="module.agendas.development.json" />
+        <Content Include="module.agendas.development.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <None Remove="module.agendas.json" />
+        <Content Include="module.agendas.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
     </ItemGroup>
 
 </Project>
