@@ -15,7 +15,7 @@ public sealed class Submission : AggregateRoot
     public string Status { get; private set; }
     public IEnumerable<string> Tags { get; private set; }
     public ICollection<Speaker> _speakers { get; set; }
-    public IEnumerable Speakers => _speakers;
+    public IEnumerable<Speaker> Speakers => _speakers;
 
     public Submission(AggregateId id, ConferenceId conferenceId, string title, string description,
         int level, string status, IEnumerable<string> tags, ICollection<Speaker> speakers, int version = 0)
