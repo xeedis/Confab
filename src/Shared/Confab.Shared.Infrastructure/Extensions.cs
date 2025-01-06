@@ -9,6 +9,7 @@ using Confab.Shared.Infrastructure.Commands;
 using Confab.Shared.Infrastructure.Contexts;
 using Confab.Shared.Infrastructure.Events;
 using Confab.Shared.Infrastructure.Exceptions;
+using Confab.Shared.Infrastructure.Kernel;
 using Confab.Shared.Infrastructure.Messaging;
 using Confab.Shared.Infrastructure.Modules;
 using Confab.Shared.Infrastructure.Queries;
@@ -62,6 +63,7 @@ internal static class Extensions
         services.AddErrorHandling();
         services.AddCommands(assemblies);
         services.AddQueries(assemblies);
+        services.AddDomainEvents(assemblies);
         services.AddEvents(assemblies);
         services.AddMessaging();
         services.AddSingleton<IClock, UtcClock>();

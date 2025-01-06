@@ -15,25 +15,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7739ebc0-1fc8-4a52-9125-57c930725a26" name="Changes" comment="Events initialized">
-      <change afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/Events/External/ConferenceCreated.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Abstractions/Modules/IModuleClient.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/IModuleRegistry.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/IModuleSerializer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/JsonModuleSerializer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/ModuleBroadcastRegistration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/ModuleClient.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/ModuleRegistry.cs" afterDir="false" />
+    <list default="true" id="7739ebc0-1fc8-4a52-9125-57c930725a26" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Abstractions/Kernel/IDomainEventDispatcher.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Abstractions/Kernel/IDomainEventHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Kernel/DomainEventDispatcher.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Kernel/Extensions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Confab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Confab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Confab.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Confab.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Core/Confab.Modules.Conferences.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Core/Confab.Modules.Conferences.Core.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Core/Services/ConferenceService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Core/Services/ConferenceService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Messages/Events/ConferenceCreated.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Core/Events/ConferenceCreated.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/Confab.Modules.Tickets.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/Confab.Modules.Tickets.Core.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/Events/External/Handlers/ConferenceCreatedHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/Events/External/Handlers/ConferenceCreatedHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modules/Agendas/Confab.Modules.Agendas.Application/Submissions/Commands/Handlers/ApproveSubmissionHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Agendas/Confab.Modules.Agendas.Application/Submissions/Commands/Handlers/ApproveSubmissionHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Extensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/Extensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/ModuleInfoProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/ModuleInfoProvider.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +51,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/xeedis/Confab.git&quot;,
-    &quot;accountId&quot;: &quot;e2ca818a-5762-44b7-9d1f-83c38b8b9a6f&quot;
+    &quot;accountId&quot;: &quot;d3051537-470e-410c-9bde-1c4599b11d66&quot;
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
@@ -72,21 +61,16 @@
     <setting file="file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/ModuleBroadcastRegistration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/ModuleClient.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/ModuleRegistry.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cd79480462a3483b991d033234884520cb08/22/1e3addba/JwtBearerDefaults.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d9b17947bfd74f298878a2caaa2563b3ca710/ae/ab14ad63/Object.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4045ad381dc69b9a8c076afe4c122961b5a86158d8dd0c76c117243ce72b/TimeSpan.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5b20caa11edefc0a29fd9d51441ec5312aec93f13c72f85f79a7bf134b12/CorsMiddlewareExtensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6206b31a039c6b067d869fe0f25b838d39e3e111956e24f9d3d78c62a7e2f/MvcCoreMvcBuilderExtensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/621526284d3e4868b98948aff942206525763e57e194a27623b66c384466/ServiceProviderServiceExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/658ad1fa108317d78bcae889b6e4f9dd5327babb6582972f2dbeabf36dafa5/ServiceProvider.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b9d37b8bc02c77cf8a3a84275d7fc92cee1cf86dd3c924f23ef5bb7fae17f99e/ConfigureHostBuilder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bd1d5c50194fea68ff3559c160230b0ab50f5acf4ce3061bffd6d62958e2182/ExceptionDispatchInfo.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="Toolset" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 1
@@ -343,7 +327,43 @@
       <workItem from="1727116225277" duration="14629000" />
       <workItem from="1727177217918" duration="594000" />
       <workItem from="1727179104188" duration="593000" />
-      <workItem from="1727182361883" duration="9824000" />
+      <workItem from="1727182361883" duration="11144000" />
+      <workItem from="1727810177209" duration="40000" />
+      <workItem from="1727810232473" duration="2167000" />
+      <workItem from="1728076830626" duration="1170000" />
+      <workItem from="1728127189590" duration="3439000" />
+      <workItem from="1728156454809" duration="9655000" />
+      <workItem from="1728210817387" duration="594000" />
+      <workItem from="1728212245404" duration="360000" />
+      <workItem from="1728212614633" duration="599000" />
+      <workItem from="1728219630169" duration="15510000" />
+      <workItem from="1728496092074" duration="28000" />
+      <workItem from="1728496126027" duration="4632000" />
+      <workItem from="1728840534912" duration="97000" />
+      <workItem from="1728840641295" duration="6404000" />
+      <workItem from="1729195417220" duration="12000" />
+      <workItem from="1729195435842" duration="6349000" />
+      <workItem from="1729453242450" duration="7000" />
+      <workItem from="1729453254923" duration="4866000" />
+      <workItem from="1729624538438" duration="27000" />
+      <workItem from="1729624572764" duration="5877000" />
+      <workItem from="1729981237075" duration="8000" />
+      <workItem from="1730046739279" duration="8267000" />
+      <workItem from="1730845875061" duration="790000" />
+      <workItem from="1731349825212" duration="10139000" />
+      <workItem from="1731622646028" duration="2718000" />
+      <workItem from="1731852383820" duration="1112000" />
+      <workItem from="1732027947184" duration="3300000" />
+      <workItem from="1732043870730" duration="2231000" />
+      <workItem from="1733240830982" duration="608000" />
+      <workItem from="1733949540770" duration="1447000" />
+      <workItem from="1734646469582" duration="903000" />
+      <workItem from="1735846255127" duration="3410000" />
+      <workItem from="1735849997846" duration="9397000" />
+      <workItem from="1735951336698" duration="1252000" />
+      <workItem from="1736002002785" duration="4441000" />
+      <workItem from="1736105106623" duration="2326000" />
+      <workItem from="1736177915153" duration="6141000" />
     </task>
     <task id="LOCAL-00001" summary="conferences controller added">
       <option name="closed" value="true" />
@@ -433,7 +453,79 @@
       <option name="project" value="LOCAL" />
       <updated>1727185095121</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Client and registration modules created">
+      <option name="closed" value="true" />
+      <created>1727206969220</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1727206969220</updated>
+    </task>
+    <task id="LOCAL-00013" summary="message broker added">
+      <option name="closed" value="true" />
+      <created>1728167127056</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1728167127056</updated>
+    </task>
+    <task id="LOCAL-00014" summary="async messaging with background job">
+      <option name="closed" value="true" />
+      <created>1728239452522</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1728239452522</updated>
+    </task>
+    <task id="LOCAL-00015" summary="agenda init">
+      <option name="closed" value="true" />
+      <created>1728248359716</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1728248359716</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Subission domain Added">
+      <option name="closed" value="true" />
+      <created>1729462143353</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1729462143353</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Speaker event integration">
+      <option name="closed" value="true" />
+      <created>1729462977445</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1729462977445</updated>
+    </task>
+    <task id="LOCAL-00018" summary="cqrs added">
+      <option name="closed" value="true" />
+      <created>1731371992181</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1731371992181</updated>
+    </task>
+    <task id="LOCAL-00019" summary="tiding up..">
+      <option name="closed" value="true" />
+      <created>1735851633632</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1735851633632</updated>
+    </task>
+    <task id="LOCAL-00020" summary="cqrs added">
+      <option name="closed" value="true" />
+      <created>1735863028620</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1735863028620</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -453,7 +545,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="conferences controller added" />
     <MESSAGE value="Errors handler addded" />
@@ -466,179 +557,24 @@
     <MESSAGE value="automatic context added" />
     <MESSAGE value="Tickets module added" />
     <MESSAGE value="Events initialized" />
-    <option name="LAST_COMMIT_MESSAGE" value="Events initialized" />
+    <MESSAGE value="Client and registration modules created" />
+    <MESSAGE value="message broker added" />
+    <MESSAGE value="async messaging with background job" />
+    <MESSAGE value="agenda init" />
+    <MESSAGE value="Subission domain Added" />
+    <MESSAGE value="Speaker event integration" />
+    <MESSAGE value="tiding up.." />
+    <MESSAGE value="cqrs added" />
+    <option name="LAST_COMMIT_MESSAGE" value="cqrs added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Core/Services/ConferenceService.cs</url>
-          <line>49</line>
-          <properties documentPath="C:\.Net\ModularnyMonolit\src\Modules\Confab.Modules.Conferences.Core\Services\ConferenceService.cs" containingFunctionPresentation="Method 'AddAsync'">
-            <startOffsets>
-              <option value="1991" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2158" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Events/EventDispatcher.cs</url>
-          <line>11</line>
-          <properties documentPath="C:\.Net\ModularnyMonolit\src\Shared\Confab.Shared.Infrastructure\Events\EventDispatcher.cs" containingFunctionPresentation="Method 'PublishAsync'">
-            <startOffsets>
-              <option value="407" />
-            </startOffsets>
-            <endOffsets>
-              <option value="456" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/Events/External/Handlers/ConferenceCreatedHandler.cs</url>
-          <line>14</line>
-          <properties documentPath="C:\.Net\ModularnyMonolit\src\Modules\Confab.Modules.Tickets.Core\Events\External\Handlers\ConferenceCreatedHandler.cs" containingFunctionPresentation="Method 'HandleAsync'">
-            <startOffsets>
-              <option value="473" />
-            </startOffsets>
-            <endOffsets>
-              <option value="703" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Modules/Confab.Modules.Tickets.Core/Events/External/Handlers/ConferenceCreatedHandler.cs</url>
-          <line>24</line>
-          <properties documentPath="C:\.Net\ModularnyMonolit\src\Modules\Confab.Modules.Tickets.Core\Events\External\Handlers\ConferenceCreatedHandler.cs" containingFunctionPresentation="Method 'HandleAsync'">
-            <startOffsets>
-              <option value="768" />
-            </startOffsets>
-            <endOffsets>
-              <option value="834" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/Extensions.cs</url>
-          <line>75</line>
-          <properties documentPath="C:\.Net\ModularnyMonolit\src\Shared\Confab.Shared.Infrastructure\Modules\Extensions.cs" containingFunctionPresentation="Lambda expression inside Method 'AddModuleRegistry'">
-            <startOffsets>
-              <option value="2829" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2881" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/Extensions.cs</url>
-          <line>85</line>
-          <properties documentPath="C:\.Net\ModularnyMonolit\src\Shared\Confab.Shared.Infrastructure\Modules\Extensions.cs" containingFunctionPresentation="Lambda expression inside Method 'AddModuleRegistry'">
-            <startOffsets>
-              <option value="3235" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3251" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/Extensions.cs</url>
-          <line>79</line>
-          <properties documentPath="C:\.Net\ModularnyMonolit\src\Shared\Confab.Shared.Infrastructure\Modules\Extensions.cs" containingFunctionPresentation="Lambda expression inside Method 'AddModuleRegistry'">
-            <startOffsets>
-              <option value="2959" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3207" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Modules/Confab.Modules.Conferences.Core/Services/ConferenceService.cs</url>
-          <line>34</line>
-          <properties documentPath="C:\.Net\ModularnyMonolit\src\Modules\Confab.Modules.Conferences.Core\Services\ConferenceService.cs" containingFunctionPresentation="Method 'AddAsync'">
-            <startOffsets>
-              <option value="1424" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1448" />
-            </endOffsets>
-          </properties>
+          <line>35</line>
+          <properties documentPath="C:\.Net\ModularnyMonolit\src\Modules\Confab.Modules.Conferences.Core\Services\ConferenceService.cs" containingFunctionPresentation="Method 'AddAsync'" />
           <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/ModuleClient.cs</url>
-          <line>11</line>
-          <properties documentPath="C:\.Net\ModularnyMonolit\src\Shared\Confab.Shared.Infrastructure\Modules\ModuleClient.cs" containingFunctionPresentation="Method 'PublishAsync'">
-            <startOffsets>
-              <option value="360" />
-            </startOffsets>
-            <endOffsets>
-              <option value="393" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/ModuleClient.cs</url>
-          <line>12</line>
-          <properties documentPath="C:\.Net\ModularnyMonolit\src\Shared\Confab.Shared.Infrastructure\Modules\ModuleClient.cs" containingFunctionPresentation="Method 'PublishAsync'">
-            <startOffsets>
-              <option value="402" />
-            </startOffsets>
-            <endOffsets>
-              <option value="468" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/ModuleClient.cs</url>
-          <line>14</line>
-          <properties documentPath="C:\.Net\ModularnyMonolit\src\Shared\Confab.Shared.Infrastructure\Modules\ModuleClient.cs" containingFunctionPresentation="Method 'PublishAsync'">
-            <startOffsets>
-              <option value="478" />
-            </startOffsets>
-            <endOffsets>
-              <option value="507" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/ModuleClient.cs</url>
-          <line>19</line>
-          <properties documentPath="C:\.Net\ModularnyMonolit\src\Shared\Confab.Shared.Infrastructure\Modules\ModuleClient.cs" containingFunctionPresentation="Method 'PublishAsync'">
-            <startOffsets>
-              <option value="637" />
-            </startOffsets>
-            <endOffsets>
-              <option value="709" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Shared/Confab.Shared.Infrastructure/Modules/ModuleClient.cs</url>
-          <line>20</line>
-          <properties documentPath="C:\.Net\ModularnyMonolit\src\Shared\Confab.Shared.Infrastructure\Modules\ModuleClient.cs" containingFunctionPresentation="Method 'PublishAsync'">
-            <startOffsets>
-              <option value="722" />
-            </startOffsets>
-            <endOffsets>
-              <option value="757" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
