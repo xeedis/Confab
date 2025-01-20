@@ -1,4 +1,4 @@
-using Confab.Modules.Agendas.Application.Exceptions;
+using Confab.Modules.Agendas.Application.Submissions.Exceptions;
 using Confab.Modules.Agendas.Application.Submissions.Services;
 using Confab.Modules.Agendas.Domain.Submissions.Repositories;
 using Confab.Shared.Abstractions.Commands;

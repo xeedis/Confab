@@ -1,6 +1,6 @@
 using Confab.Shared.Abstractions.Exceptions;
 
-namespace Confab.Modules.Agendas.Application.Exceptions;
+namespace Confab.Modules.Agendas.Application.Submissions.Exceptions;
 
 public class SubmissionNotFoundException : ConfabException
 {
