@@ -53,6 +53,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confab.Modules.Users.Core",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confab.Modules.Users.Api", "src\Modules\Users\Confab.Modules.Users.Api\Confab.Modules.Users.Api.csproj", "{B3FC3564-C8A9-4F45-ABF3-C61FDBBB5DEF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Attendances", "Attendances", "{DC367F48-20B0-45F7-A2BA-216E5BB18E1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confab.Modules.Attendances.Domain", "src\Modules\Confab.Modules.Attendances.Domain\Confab.Modules.Attendances.Domain.csproj", "{8CA6542A-674A-420D-8A14-87A2BB4A3F57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confab.Modules.Attendances.Api", "src\Modules\Confab.Modules.Attendances.Api\Confab.Modules.Attendances.Api.csproj", "{4C09F43E-D5AE-456B-852B-0CAC528A5282}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confab.Modules.Attendances.Application", "src\Modules\Confab.Modules.Attendances.Application\Confab.Modules.Attendances.Application.csproj", "{560D0073-9DE9-4DAE-AD0F-CA770F91085E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confab.Modules.Attendances.Infrastructure", "src\Modules\Confab.Modules.Attendances.Infrastructure\Confab.Modules.Attendances.Infrastructure.csproj", "{83B5A905-7A36-489F-9338-E852AE213B1C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -122,6 +132,22 @@ Global
 		{B3FC3564-C8A9-4F45-ABF3-C61FDBBB5DEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3FC3564-C8A9-4F45-ABF3-C61FDBBB5DEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3FC3564-C8A9-4F45-ABF3-C61FDBBB5DEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CA6542A-674A-420D-8A14-87A2BB4A3F57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CA6542A-674A-420D-8A14-87A2BB4A3F57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CA6542A-674A-420D-8A14-87A2BB4A3F57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CA6542A-674A-420D-8A14-87A2BB4A3F57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C09F43E-D5AE-456B-852B-0CAC528A5282}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C09F43E-D5AE-456B-852B-0CAC528A5282}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C09F43E-D5AE-456B-852B-0CAC528A5282}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C09F43E-D5AE-456B-852B-0CAC528A5282}.Release|Any CPU.Build.0 = Release|Any CPU
+		{560D0073-9DE9-4DAE-AD0F-CA770F91085E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{560D0073-9DE9-4DAE-AD0F-CA770F91085E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{560D0073-9DE9-4DAE-AD0F-CA770F91085E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{560D0073-9DE9-4DAE-AD0F-CA770F91085E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83B5A905-7A36-489F-9338-E852AE213B1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83B5A905-7A36-489F-9338-E852AE213B1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83B5A905-7A36-489F-9338-E852AE213B1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83B5A905-7A36-489F-9338-E852AE213B1C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{0887BC30-5C94-4A80-8E97-99C57580EF2D} = {0E58E5F7-B3C7-4F62-921E-7EC8C2F37FA0}
@@ -147,5 +173,10 @@ Global
 		{6E5F5BEC-F6E0-447C-94BE-4573CF80866B} = {CAEF5EBB-FE83-488F-AFEA-3C8F67BEC603}
 		{AAC92DEC-45BE-4C64-94D3-ACB52089228D} = {1E949481-E981-4B3C-A4DD-D1792E9291E7}
 		{B3FC3564-C8A9-4F45-ABF3-C61FDBBB5DEF} = {1E949481-E981-4B3C-A4DD-D1792E9291E7}
+		{DC367F48-20B0-45F7-A2BA-216E5BB18E1E} = {AEB7717D-BCD1-4374-A2AB-0EDBBE8503E7}
+		{8CA6542A-674A-420D-8A14-87A2BB4A3F57} = {DC367F48-20B0-45F7-A2BA-216E5BB18E1E}
+		{4C09F43E-D5AE-456B-852B-0CAC528A5282} = {DC367F48-20B0-45F7-A2BA-216E5BB18E1E}
+		{560D0073-9DE9-4DAE-AD0F-CA770F91085E} = {DC367F48-20B0-45F7-A2BA-216E5BB18E1E}
+		{83B5A905-7A36-489F-9338-E852AE213B1C} = {DC367F48-20B0-45F7-A2BA-216E5BB18E1E}
 	EndGlobalSection
 EndGlobal

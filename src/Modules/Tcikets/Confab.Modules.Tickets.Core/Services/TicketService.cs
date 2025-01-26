@@ -1,7 +1,9 @@
 using Confab.Modules.Tickets.Core.DTO;
 using Confab.Modules.Tickets.Core.Entities;
+using Confab.Modules.Tickets.Core.Events;
 using Confab.Modules.Tickets.Core.Exceptions;
 using Confab.Modules.Tickets.Core.Repositories;
+using Confab.Shared.Abstractions.Messaging;
 using Confab.Shared.Abstractions.Time;
 using Microsoft.Extensions.Logging;
 
@@ -15,9 +17,10 @@ internal class TicketService : ITicketService
     private readonly ITicketSaleRepository _ticketSaleRepository;
     private readonly ITicketGenerator _generator;
     private readonly ILogger<TicketService> _logger;
+    private readonly IMessageBroker _messageBroker;
     
     public TicketService(IClock clock, IConferenceRepository conferenceRepository, ITicketRepository ticketRepository, 
-        ITicketSaleRepository ticketSaleRepository, ITicketGenerator generator, ILogger<TicketService> logger)
+        ITicketSaleRepository ticketSaleRepository, ITicketGenerator generator, ILogger<TicketService> logger, IMessageBroker messageBroker)
     {
         _clock = clock;
         _conferenceRepository = conferenceRepository;
@@ -25,6 +28,7 @@ internal class TicketService : ITicketService
         _ticketSaleRepository = ticketSaleRepository;
         _generator = generator;
         _logger = logger;
+        _messageBroker = messageBroker;
     }
     
     public async Task PurchaseAsync(Guid conferenceId, Guid userId)
@@ -60,6 +64,7 @@ internal class TicketService : ITicketService
         await _ticketRepository.AddAsync(ticket);
         _logger.LogInformation($"Ticket with ID: '{ticket.Id}' was generated for the conference: " +
                                $"'{conferenceId}' by user: '{userId}'.");
+        await _messageBroker.PublishAsync(new TicketPurchased(ticket.Id,conferenceId, userId));
     }
 
     public async Task<IEnumerable<TicketDto>> GetForUserAsync(Guid userId)
