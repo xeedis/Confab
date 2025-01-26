@@ -6,10 +6,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Controllers\" />
-    </ItemGroup>
-
-    <ItemGroup>
         <ProjectReference Include="..\Confab.Modules.Attendances.Infrastructure\Confab.Modules.Attendances.Infrastructure.csproj" />
     </ItemGroup>
 

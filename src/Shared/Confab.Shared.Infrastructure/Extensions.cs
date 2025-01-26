@@ -56,6 +56,7 @@ internal static class Extensions
                     .WithHeaders("Content-Type", "Authorization");
             });
         });
+        services.AddMemoryCache();
         services.AddSingleton<IContextFactory, ContextFactory>();
         services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
         services.AddSingleton<IRequestStorage, RequestStorage>();
