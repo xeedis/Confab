@@ -1,4 +1,5 @@
 using Confab.Modules.Agendas.Domain.Submissions.Entities;
+using Confab.Shared.Abstractions.Kernel.Types;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
@@ -13,15 +14,11 @@ internal sealed class SubmissionConfiguration : IEntityTypeConfiguration<Submiss
 
         builder
             .Property(x => x.Id)
-            .HasConversion(
-                convertToProviderExpression: aggregateId => aggregateId.Value,
-                convertFromProviderExpression: guid => new(guid));
-
+            .HasConversion(x => x.Value, x => new AggregateId(x));
+            
         builder
             .Property(x => x.ConferenceId)
-            .HasConversion(
-                convertToProviderExpression: conferenceId => conferenceId.Value,
-                convertFromProviderExpression: guid => new(guid));
+            .HasConversion(x => x.Value, x => new ConferenceId(x));
 
         builder
             .Property(x => x.Version)

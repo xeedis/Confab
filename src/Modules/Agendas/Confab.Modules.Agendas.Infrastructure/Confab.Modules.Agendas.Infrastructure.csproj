@@ -11,4 +11,8 @@
       <ProjectReference Include="..\Confab.Modules.Agendas.Domain\Confab.Modules.Agendas.Domain.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="EF\Migrations\" />
+    </ItemGroup>
+
 </Project>

@@ -15,7 +15,7 @@ public class AgendaSlotConfiguration : IEntityTypeConfiguration<AgendaSlot>
         builder
             .Property(s => s.Id)
             .HasConversion(id => id.Value, id => new EntityId(id));
-            
+
         builder
             .HasDiscriminator<string>("Type")
             .HasValue<PlaceholderAgendaSlot>(AgendaSlotType.Placeholder)

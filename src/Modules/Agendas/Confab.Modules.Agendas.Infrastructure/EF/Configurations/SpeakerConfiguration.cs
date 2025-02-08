@@ -1,4 +1,5 @@
 using Confab.Modules.Agendas.Domain.Submissions.Entities;
+using Confab.Shared.Abstractions.Kernel.Types;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -12,8 +13,7 @@ internal sealed class SpeakerConfiguration : IEntityTypeConfiguration<Speaker>
 
         builder
             .Property(x => x.Id)
-            .HasConversion(convertToProviderExpression: aggregateId => aggregateId.Value,
-                convertFromProviderExpression: guid => new(guid));
+            .HasConversion(x => x.Value, x => new AggregateId(x));
 
         builder
             .Property(x => x.Version)

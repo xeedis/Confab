@@ -14,11 +14,12 @@ public sealed class Submission : AggregateRoot
     public int Level { get; private set; }
     public string Status { get; private set; }
     public IEnumerable<string> Tags { get; private set; }
-    public ICollection<Speaker> _speakers { get; set; }
     public IEnumerable<Speaker> Speakers => _speakers;
 
-    public Submission(AggregateId id, ConferenceId conferenceId, string title, string description,
-        int level, string status, IEnumerable<string> tags, ICollection<Speaker> speakers, int version = 0)
+    private ICollection<Speaker> _speakers;
+
+    public Submission(AggregateId id, ConferenceId conferenceId, string title, string description, int level,
+        string status, IEnumerable<string> tags, ICollection<Speaker> speakers, int version = 0)
         : this(id, conferenceId)
     {
         ConferenceId = conferenceId;
@@ -32,10 +33,12 @@ public sealed class Submission : AggregateRoot
     }
 
     public Submission(AggregateId id, ConferenceId conferenceId)
-        => (Id, ConferenceId) = (id, conferenceId);
+    {
+        (Id, ConferenceId) = (id, conferenceId);
+    }
 
     public static Submission Create(AggregateId id, ConferenceId conferenceId, string title, string description,
-        int level, IEnumerable<string> tags, ICollection<Speaker> speakers)
+        int level, IEnumerable<string> tags, IEnumerable<Speaker> speakers)
     {
         var submission = new Submission(id, conferenceId);
         submission.ChangeTitle(title);
@@ -54,10 +57,7 @@ public sealed class Submission : AggregateRoot
 
     public void ChangeTitle(string title)
     {
-        if (string.IsNullOrWhiteSpace(title))
-        {
-            throw new EmptySubmissionTitleException(Id);
-        }
+        if (string.IsNullOrWhiteSpace(title)) throw new EmptySubmissionTitleException(Id);
 
         Title = title;
         IncrementVersion();
@@ -65,10 +65,7 @@ public sealed class Submission : AggregateRoot
 
     public void ChangeDescription(string description)
     {
-        if (string.IsNullOrWhiteSpace(description))
-        {
-            throw new EmptySubmissionTitleException(Id);
-        }
+        if (string.IsNullOrWhiteSpace(description)) throw new EmptySubmissionDescriptionException(Id);
 
         Description = description;
         IncrementVersion();
@@ -76,40 +73,38 @@ public sealed class Submission : AggregateRoot
 
     public void ChangeLevel(int level)
     {
-        if (IsNotRange())
-        {
-            throw new InvalidSubmissionLevelException(Id);
-        }
+        if (IsNotInRange()) throw new InvalidSubmissionLevelException(Id);
 
         Level = level;
         IncrementVersion();
 
-        bool IsNotRange() => level < 1 || level > 6;
+        bool IsNotInRange()
+        {
+            return level < 1 || level > 6;
+        }
     }
 
     public void ChangeSpeakers(IEnumerable<Speaker> speakers)
     {
-        if (!speakers.Any())
-        {
-            throw new MissingSubmissionSpeakersException(Id);
-        }
+        if (speakers is null || !speakers.Any()) throw new MissingSubmissionSpeakersException(Id);
 
         _speakers = speakers.ToList();
         IncrementVersion();
     }
 
     public void Approve()
-        => ChangeStatus(SubmissionStatus.Approved, SubmissionStatus.Rejected);
+    {
+        ChangeStatus(SubmissionStatus.Approved, SubmissionStatus.Rejected);
+    }
 
     public void Reject()
-        => ChangeStatus(SubmissionStatus.Rejected, SubmissionStatus.Approved);
+    {
+        ChangeStatus(SubmissionStatus.Rejected, SubmissionStatus.Approved);
+    }
 
     private void ChangeStatus(string status, string invalidStatus)
     {
-        if (Status == invalidStatus)
-        {
-            throw new InvalidSubmissionStatusException(Id, status, invalidStatus);
-        }
+        if (Status == invalidStatus) throw new InvalidSubmissionStatusException(Id, status, invalidStatus);
 
         Status = status;
         AddEvent(new SubmissionStatusChanged(this, status));

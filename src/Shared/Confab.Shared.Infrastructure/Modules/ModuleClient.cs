@@ -5,7 +5,8 @@ namespace Confab.Shared.Infrastructure.Modules;
 internal sealed class ModuleClient(IModuleRegistry moduleRegistry, IModuleSerializer moduleSerializer)
     : IModuleClient
 {
-    public Task SendAsync(string path, object request) => SendAsync<object>(path, request);
+    public Task SendAsync(string path, object request) 
+        => SendAsync<object>(path, request);
 
     public async Task<TResult> SendAsync<TResult>(string path, object request) where TResult : class
     {
@@ -19,7 +20,7 @@ internal sealed class ModuleClient(IModuleRegistry moduleRegistry, IModuleSerial
         var result = await registration.Action(receiverRequest);
 
         return result is null ? null : TranslateType<TResult>(result);
-    }private readonly IModuleSerializer _moduleSerializer = moduleSerializer;
+    }
 
     public async Task PublishAsync(object message)
     {
@@ -39,8 +40,8 @@ internal sealed class ModuleClient(IModuleRegistry moduleRegistry, IModuleSerial
     }
 
     private T TranslateType<T>(object value)
-        => _moduleSerializer.Deserialize<T>(_moduleSerializer.Serialize(value));
+        => moduleSerializer.Deserialize<T>(moduleSerializer.Serialize(value));
     
     private object TranslateType(object value, Type type)
-        => _moduleSerializer.Deserialize(_moduleSerializer.Serialize(value), type);
+        => moduleSerializer.Deserialize(moduleSerializer.Serialize(value), type);
 }

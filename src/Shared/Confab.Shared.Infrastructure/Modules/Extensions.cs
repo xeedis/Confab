@@ -49,16 +49,20 @@ public static class Extensions
                 => Directory.EnumerateFiles(
                     ctx.HostingEnvironment.ContentRootPath, $"module.{pattern}.json", SearchOption.AllDirectories);
         });
-    
-    internal static IServiceCollection AddModuleRequests(this IServiceCollection services, 
+
+    internal static IServiceCollection AddModuleRequests(this IServiceCollection services,
         IList<Assembly> assemblies)
     {
         services.AddModuleRegistry(assemblies);
         services.AddSingleton<IModuleClient, ModuleClient>();
         services.AddSingleton<IModuleSerializer, JsonModuleSerializer>();
+        services.AddSingleton<IModuleSubscriber, ModuleSubscriber>();
 
         return services;
     }
+
+    public static IModuleSubscriber UseModuleRequest(this IApplicationBuilder app)
+        => app.ApplicationServices.GetRequiredService<IModuleSubscriber>();
 
     private static void AddModuleRegistry(this IServiceCollection services, IEnumerable<Assembly> assemblies)
     {

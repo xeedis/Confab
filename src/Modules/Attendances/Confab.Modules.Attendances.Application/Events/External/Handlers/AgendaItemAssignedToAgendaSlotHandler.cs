@@ -43,7 +43,7 @@ internal sealed class AgendaItemAssignedToAgendaSlotHandler : IEventHandler<Agen
         attendableEvent = new AttendableEvent(@event.AgendaItemId, slot.AgendaItem.ConferenceId, slot.From, slot.To);
         var slotPolicy = _slotPolicyFactory.Get(slot.AgendaItem.Tags.ToArray());
         var slots = slotPolicy.Generate(slot.ParticipantsLimit.Value);
-        attendableEvent.AddSlots(slots);
+        attendableEvent.AddSlots(slots); 
         await _attendableEventsRepository.AddAsync(attendableEvent);
     }
 }
