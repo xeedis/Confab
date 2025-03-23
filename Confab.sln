@@ -63,6 +63,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confab.Modules.Attendances.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confab.Modules.Attendances.Infrastructure", "src\Modules\Attendances\Confab.Modules.Attendances.Infrastructure\Confab.Modules.Attendances.Infrastructure.csproj", "{AB9DE021-1D97-419C-B122-A7EB0B72C107}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confab.Modules.Attendances.Tests.Unit", "src\Modules\Attendances\Confab.Modules.Attendances.Tests.Unit\Confab.Modules.Attendances.Tests.Unit.csproj", "{56E5AB87-BCF0-4FA3-A88D-FFCDC9F5658E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -148,6 +150,10 @@ Global
 		{AB9DE021-1D97-419C-B122-A7EB0B72C107}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB9DE021-1D97-419C-B122-A7EB0B72C107}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB9DE021-1D97-419C-B122-A7EB0B72C107}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56E5AB87-BCF0-4FA3-A88D-FFCDC9F5658E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56E5AB87-BCF0-4FA3-A88D-FFCDC9F5658E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56E5AB87-BCF0-4FA3-A88D-FFCDC9F5658E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56E5AB87-BCF0-4FA3-A88D-FFCDC9F5658E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{0887BC30-5C94-4A80-8E97-99C57580EF2D} = {0E58E5F7-B3C7-4F62-921E-7EC8C2F37FA0}
@@ -178,5 +184,6 @@ Global
 		{FCA59673-D623-4595-AF23-D41EBA1086CE} = {DC367F48-20B0-45F7-A2BA-216E5BB18E1E}
 		{26260CFD-6675-4471-AFFE-386EE489A625} = {DC367F48-20B0-45F7-A2BA-216E5BB18E1E}
 		{AB9DE021-1D97-419C-B122-A7EB0B72C107} = {DC367F48-20B0-45F7-A2BA-216E5BB18E1E}
+		{56E5AB87-BCF0-4FA3-A88D-FFCDC9F5658E} = {DC367F48-20B0-45F7-A2BA-216E5BB18E1E}
 	EndGlobalSection
 EndGlobal
