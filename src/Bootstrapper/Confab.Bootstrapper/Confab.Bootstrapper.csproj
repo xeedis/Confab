@@ -22,6 +22,8 @@
       </PackageReference>
     </ItemGroup>
 
-    
+    <ItemGroup>
+        <InternalsVisibleTo Include="Confab.Shared.Tests"/>
+    </ItemGroup>
 
 </Project>

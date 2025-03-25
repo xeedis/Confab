@@ -4,9 +4,7 @@ using Confab.Modules.Conferences.Core.Events;
 using Confab.Modules.Conferences.Core.Exceptions;
 using Confab.Modules.Conferences.Core.Policies;
 using Confab.Modules.Conferences.Core.Repositories;
-using Confab.Shared.Abstractions.Events;
 using Confab.Shared.Abstractions.Messaging;
-using Confab.Shared.Abstractions.Modules;
 
 namespace Confab.Modules.Conferences.Core.Services;
 

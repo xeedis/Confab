@@ -1,5 +1,4 @@
 using System.Reflection;
-using Confab.Shared.Abstractions.Events;
 using Confab.Shared.Abstractions.Queries;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -11,7 +10,7 @@ internal static class Extensions
     {
         services.AddSingleton<IQueryDispatcher, QueryDispatcher>();
         services.Scan(s => s.FromAssemblies(assemblies)
-            .AddClasses(c => c.AssignableTo(typeof(IEventHandler<>))
+            .AddClasses(c => c.AssignableTo(typeof(IQueryHandler<,>))
                 .WithoutAttribute<DecoratorAttribute>())
             .AsImplementedInterfaces()
             .WithScopedLifetime());

@@ -1,5 +1,3 @@
-using Confab.Modules.Agendas.Application.Submissions.DTO;
-
 namespace Confab.Modules.Agendas.Application.Agendas.DTO;
 
 public class AgendaItemDto

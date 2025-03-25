@@ -1,4 +1,3 @@
-using System.Collections;
 using Confab.Modules.Agendas.Domain.Submissions.Const;
 using Confab.Modules.Agendas.Domain.Submissions.Events;
 using Confab.Modules.Agendas.Domain.Submissions.Exceptions;

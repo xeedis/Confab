@@ -1,7 +1,6 @@
 using Confab.Shared.Abstractions.Messaging;
 using Confab.Shared.Abstractions.Modules;
 using Confab.Shared.Infrastructure.Messaging.Dispatchers;
-using Microsoft.Extensions.Logging;
 
 namespace Confab.Shared.Infrastructure.Messaging.Brokers;
 

@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-
 namespace Confab.Modules.Conferences.Core.Entities;
 
 public class Host

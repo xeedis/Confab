@@ -1,41 +1,25 @@
-using System.Reflection;
-using Confab.Bootstrapper;
-using Confab.Shared.Abstractions.Modules;
-using Confab.Shared.Infrastructure;
 using Confab.Shared.Infrastructure.Modules;
 
-var builder = WebApplication.CreateBuilder(args);
+namespace Confab.Bootstrapper;
 
-builder.Host.ConfigureModules();
-
-var configuration = builder.Configuration;
-
-IList<Assembly> _assemblies = ModuleLoader.LoadAllAssemblies(configuration);
-IList<IModule> _modules = ModuleLoader.LoadModules(_assemblies);
-
-builder.Services.AddInfrastructure(_assemblies, _modules);
-foreach (var module in _modules)
+public class Program
 {
-    module.Register(builder.Services);
+    public async static Task Main(string[] args)
+    {
+        var builder = CreateHostBuilder(args);
+        var host = builder.Build();
+        await host.RunAsync();
+    }
+
+    public static IHostBuilder CreateHostBuilder(string[] args)
+    {
+        var defaultBuilder = Host.CreateDefaultBuilder(args);
+        var configureWebHostDefaults = defaultBuilder.ConfigureWebHostDefaults(webBuilder =>
+        {
+            webBuilder.UseStartup<Startup>();
+        });
+
+        var configureModules = configureWebHostDefaults.ConfigureModules();
+        return configureModules;
+    }
 }
-
-var app = builder.Build();
-
-var logger = app.Services.GetService<ILogger<Program>>();
-
-app.UseInfrastructure();
-foreach (var module in _modules)
-{
-    module.Use(app);
-}
-
-logger.LogInformation($"Modules: {string.Join(", ", _modules.Select(x => x.Name))}");
-
-app.MapControllers();
-app.MapGet("/", () => "Confab API!");
-app.MapModuleInfo();
-
-_assemblies.Clear();
-_modules.Clear();
-
-app.Run();

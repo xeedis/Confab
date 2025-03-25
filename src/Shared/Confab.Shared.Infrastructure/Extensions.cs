@@ -24,6 +24,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 [assembly: InternalsVisibleTo("Confab.Bootstrapper")]
+[assembly: InternalsVisibleTo("Confab.Shared.Tests")]
 namespace Confab.Shared.Infrastructure;
 
 internal static class Extensions
@@ -97,7 +98,7 @@ internal static class Extensions
         return services;
     }
 
-    public static WebApplication UseInfrastructure(this WebApplication app)
+    public static IApplicationBuilder UseInfrastructure(this IApplicationBuilder app)
     {
         app.UseCors();
         app.UseErrorHandling();

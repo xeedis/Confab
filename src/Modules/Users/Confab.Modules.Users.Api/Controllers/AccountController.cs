@@ -1,4 +1,3 @@
-using Confab.Modules.Users.Core.DAL;
 using Confab.Modules.Users.Core.DTO;
 using Confab.Modules.Users.Core.Services;
 using Confab.Shared.Abstractions.Auth;
