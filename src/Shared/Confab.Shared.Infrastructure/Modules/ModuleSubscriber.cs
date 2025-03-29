@@ -1,4 +1,5 @@
 using Confab.Shared.Abstractions.Modules;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Confab.Shared.Infrastructure.Modules;
 
@@ -17,7 +18,11 @@ internal sealed class ModuleSubscriber : IModuleSubscriber
         where TRequest : class where TResponse : class
     {
         _registry.AddRequestAction(path, typeof(TRequest), typeof(TResponse), 
-            async request => await action((TRequest)request, _serviceProvider));
+            async request =>
+            {
+                using var scope = _serviceProvider.CreateScope();
+                return await action((TRequest)request, scope.ServiceProvider);
+            });
 
         return this;
     }

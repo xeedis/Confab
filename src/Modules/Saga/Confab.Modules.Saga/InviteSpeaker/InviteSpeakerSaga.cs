@@ -1,6 +1,8 @@
 using Chronicle;
 using Confab.Modules.Saga.Messages;
+using Confab.Shared.Abstractions.Messaging;
 using Confab.Shared.Abstractions.Modules;
+using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.Extensions.Logging;
 
 namespace Confab.Modules.Saga.InviteSpeaker;
@@ -11,10 +13,21 @@ internal class InviteSpeakerSaga : Saga<InviteSpeakerSaga.SagaData>,
     ISagaAction<SignedIn>
 {
     private readonly IModuleClient _moduleClient;
+    private readonly IMessageBroker _messageBroker;
 
-    public InviteSpeakerSaga(IModuleClient moduleClient)
+    public override SagaId ResolveId(object message, ISagaContext context)
+        => message switch
+        {
+            SignedUp m => m.UserId.ToString(),
+            SignedIn m => m.UserId.ToString(),
+            SpeakerCreated m => m.Id.ToString(),
+            _ => base.ResolveId(message, context)
+        };
+
+    public InviteSpeakerSaga(IModuleClient moduleClient, IMessageBroker messageBroker)
     {
         _moduleClient = moduleClient;
+        _messageBroker = messageBroker;
     }
     
     public async Task HandleAsync(SignedUp message, ISagaContext context)
@@ -41,12 +54,17 @@ internal class InviteSpeakerSaga : Saga<InviteSpeakerSaga.SagaData>,
 
     public Task HandleAsync(SpeakerCreated message, ISagaContext context)
     {
-        throw new NotImplementedException();
+        Data.SpeakerCreated = true;
+        return Task.CompletedTask;
     }
 
-    public Task HandleAsync(SignedIn message, ISagaContext context)
+    public async Task HandleAsync(SignedIn message, ISagaContext context)
     {
-        throw new NotImplementedException();
+        if (Data.SpeakerCreated)
+        {
+            await _messageBroker.PublishAsync(new SendWelcomeMessage(Data.Email, Data.FullName));
+            await CompleteAsync();
+        }
     }
 
     public Task CompensateAsync(SignedUp message, ISagaContext context)
@@ -66,8 +84,8 @@ internal class InviteSpeakerSaga : Saga<InviteSpeakerSaga.SagaData>,
         
         public readonly Dictionary<string, string> InvitedSpeakers = new()
         {
-            ["testSpeaker1@confab.io"] = "John Smith",
-            ["testSpeaker2@confab.io"] = "Mark Sim",
+            ["testspeaker1@confab.io"] = "John Smith",
+            ["testspeaker2@confab.io"] = "Mark Sim",
         };
     }
 }

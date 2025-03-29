@@ -3,7 +3,6 @@
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
     </PropertyGroup>
 
     <ItemGroup>
@@ -12,10 +11,12 @@
     </ItemGroup>
     
     <ItemGroup>
-      <Content Update="module.saga.development.json">
+        <None Remove="module.saga.development.json" />
+      <Content Include="module.saga.development.json">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Content>
-      <Content Update="module.saga.json">
+        <None Remove="module.saga.json" />
+      <Content Include="module.saga.json">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Content>
     </ItemGroup>

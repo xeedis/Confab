@@ -11,9 +11,9 @@ internal sealed class GetRegularAgendaSlotHandler : IQueryHandler<GetRegularAgen
 {
     private readonly DbSet<AgendaSlot> _agendaSlots;
 
-    public GetRegularAgendaSlotHandler(DbSet<AgendaSlot> agendaSlots)
+    public GetRegularAgendaSlotHandler(AgendasDbContext context)
     {
-        _agendaSlots = agendaSlots;
+        _agendaSlots = context.AgendaSlots;
     }
 
     public async Task<RegularAgendaSlotDto> HandleAsync(GetRegularAgendaSlot query)

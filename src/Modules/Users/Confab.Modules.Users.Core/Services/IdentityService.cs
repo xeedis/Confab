@@ -1,9 +1,11 @@
 using System.Security.Authentication;
 using Confab.Modules.Users.Core.DTO;
 using Confab.Modules.Users.Core.Entities;
+using Confab.Modules.Users.Core.Events;
 using Confab.Modules.Users.Core.Exceptions;
 using Confab.Modules.Users.Core.Repositories;
 using Confab.Shared.Abstractions.Auth;
+using Confab.Shared.Abstractions.Messaging;
 using Confab.Shared.Abstractions.Time;
 using Microsoft.AspNetCore.Identity;
 
@@ -15,14 +17,16 @@ internal sealed class IdentityService : IIdentityService
     private readonly IPasswordHasher<User> _passwordHasher;
     private readonly IAuthManager _authManager;
     private readonly IClock _clock;
+    private readonly IMessageBroker _messageBroker;
 
     public IdentityService(IUserRepository userRepository, IPasswordHasher<User> passwordHasher,
-        IAuthManager authManager, IClock clock)
+        IAuthManager authManager, IClock clock, IMessageBroker messageBroker)
     {
         _userRepository = userRepository;
         _passwordHasher = passwordHasher;
         _authManager = authManager;
         _clock = clock;
+        _messageBroker = messageBroker;
     }
 
     public async Task<AccountDto> GetAsync(Guid id)
@@ -62,7 +66,8 @@ internal sealed class IdentityService : IIdentityService
 
         var jwt = _authManager.CreateToken(user.Id.ToString(), user.Role, claims: user.Claims);
         jwt.Email = user.Email;
-
+        await _messageBroker.PublishAsync(new SignedIn(user.Id));
+        
         return jwt;
     }
     
@@ -88,5 +93,6 @@ internal sealed class IdentityService : IIdentityService
             Claims = dto.Claims ?? new Dictionary<string, IEnumerable<string>>()
         };
         await _userRepository.AddAsync(user);
+        await _messageBroker.PublishAsync(new SignedUp(user.Id, user.Email));
     }
 }
