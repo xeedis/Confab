@@ -1,4 +1,5 @@
 using System.Reflection;
+using Confab.Shared.Abstractions.Commands;
 using Confab.Shared.Abstractions.Events;
 using Confab.Shared.Abstractions.Modules;
 using Microsoft.AspNetCore.Builder;
@@ -67,28 +68,41 @@ public static class Extensions
     private static void AddModuleRegistry(this IServiceCollection services, IEnumerable<Assembly> assemblies)
     {
         var registry = new ModuleRegistry();
-
-        var types = assemblies.SelectMany(x => x.GetTypes().ToArray());
-
-        var entityTypes = types
+        var types = assemblies.SelectMany(x => x.GetTypes()).ToArray();
+            
+        var commandTypes = types
+            .Where(t => t.IsClass && typeof(ICommand).IsAssignableFrom(t))
+            .ToArray();
+            
+        var eventTypes = types
             .Where(x => x.IsClass && typeof(IEvent).IsAssignableFrom(x))
             .ToArray();
 
         services.AddSingleton<IModuleRegistry>(sp =>
         {
+            var commandDispatcher = sp.GetRequiredService<ICommandDispatcher>();
+            var commandDispatcherType = commandDispatcher.GetType();
+
             var eventDispatcher = sp.GetRequiredService<IEventDispatcher>();
             var eventDispatcherType = eventDispatcher.GetType();
 
-            foreach (var type in entityTypes)
+            foreach (var type in commandTypes)
+            {
+                registry.AddBroadcastAction(type, @event =>
+                    (Task)commandDispatcherType.GetMethod(nameof(commandDispatcher.SendAsync))
+                        ?.MakeGenericMethod(type)
+                        .Invoke(commandDispatcher, new[] { @event }));
+            }
+
+            foreach (var type in eventTypes)
             {
                 registry.AddBroadcastAction(type, @event =>
                     (Task)eventDispatcherType.GetMethod(nameof(eventDispatcher.PublishAsync))
                         ?.MakeGenericMethod(type)
-                        .Invoke(eventDispatcher, [@event]));
+                        .Invoke(eventDispatcher, new[] { @event }));
             }
 
             return registry;
         });
-
     }
 }

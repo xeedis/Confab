@@ -39,7 +39,7 @@ internal sealed class SpeakersService(ISpeakersRepository speakersRepository, Sp
         {
             throw new SpeakerAlreadyExistsException(dto.Id);
         }
-        dto.Id = Guid.NewGuid();
+        
         await _speakersRepository.AddAsync(dto.AsEntity());
         await _messageBroker.PublishAsync(new SpeakerCreated(dto.Id, dto.FullName));
     }

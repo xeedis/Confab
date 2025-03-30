@@ -1,3 +1,4 @@
+using Confab.Modules.Agendas.Application.Submissions.Events;
 using Confab.Modules.Agendas.Application.Submissions.Events.External;
 using Confab.Modules.Agendas.Domain.Submissions.Const;
 using Confab.Modules.Agendas.Domain.Submissions.Events;
