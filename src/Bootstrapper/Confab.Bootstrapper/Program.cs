@@ -4,7 +4,7 @@ namespace Confab.Bootstrapper;
 
 public class Program
 {
-    public async static Task Main(string[] args)
+    public static async Task Main(string[] args)
     {
         var builder = CreateHostBuilder(args);
         var host = builder.Build();
