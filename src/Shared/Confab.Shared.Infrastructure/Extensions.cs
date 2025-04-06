@@ -24,6 +24,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 [assembly: InternalsVisibleTo("Confab.Bootstrapper")]
+[assembly: InternalsVisibleTo("Confab.Services.Tickets.Core")]
 [assembly: InternalsVisibleTo("Confab.Shared.Tests")]
 namespace Confab.Shared.Infrastructure;
 

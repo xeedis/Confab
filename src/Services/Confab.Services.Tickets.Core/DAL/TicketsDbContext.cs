@@ -15,7 +15,6 @@ internal class TicketsDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.HasDefaultSchema("tickets");
         modelBuilder.ApplyConfigurationsFromAssembly(GetType().Assembly);
     }
 }
