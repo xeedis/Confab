@@ -1,0 +1,19 @@
+@url = http://localhost:5249/agendas-module
+@accessToken = eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMTgxZGQ0MC03ZWJlLTRjYzYtOGVkZC02ZDIzNzg1N2RlYjAiLCJ1bmlxdWVfbmFtZSI6IjExODFkZDQwLTdlYmUtNGNjNi04ZWRkLTZkMjM3ODU3ZGViMCIsImp0aSI6ImQ4OGM5ZTA2LTRhY2EtNDcwZC05NWFmLTY0Y2Q2NjcxYzE4NyIsImlhdCI6IjE3NDA1MDU4NDI0MzUiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJ1c2VyIiwicGVybWlzc2lvbnMiOlsiY29uZmVyZW5jZXMiLCJob3N0cyIsInNwZWFrZXJzIiwidGlja2V0cyIsInVzZXJzIl0sIm5iZiI6MTc0MDUwNTg0MiwiZXhwIjoxNzQwNTQxODQyLCJpc3MiOiJjb25mYWIifQ.iiOtyDxAx75e1xqZC3UOhzcvDGy-btfNlhqKAdtEPcw
+@conferenceId = 2be6feec-868b-48dc-8ac3-2cda5581477c
+
+GET {{url}}
+
+### Create new AgendaTrack 
+Post {{url}}/agendas/{{conferenceId}}/tracks
+
+### Assign regular agenda slot 
+PUT {{url}}/agendas/{{conferenceId}}}/slots/regular
+Authorization: Bearer {{accessToken}} 
+Content-Type: application/json
+
+{
+"agendaTrackId": "34953198-3859-4585-9709-9db5511a9833", 
+  "agendaSlotId": "d27c3975-e099-4990-8e0b-f85e846e1489", 
+  "agendaItemId": "bddebff7-7aab-4d6b-bb1e-be6a591bdbe3"
+}

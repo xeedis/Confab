@@ -1,0 +1,694 @@
+POST http://localhost:5249/users-module/account/sign-in
+Content-Type: application/json
+Content-Length: 54
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2.7
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+"email": "user3@confab.io ", "password": "secret1"
+}
+
+<> 2025-02-25T185042.200.json
+
+###
+
+GET http://localhost:5249/conferences-module/conferences
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2.7
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2025-02-18T222103.200.json
+
+###
+
+GET http://localhost:5249/agendas-module
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2.7
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2025-02-18T221952.200.json
+
+###
+
+GET http://localhost:5249/users-module
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2.7
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2025-02-18T221925.200.txt
+
+###
+
+GET http://localhost:5249/agendas-module%20
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2.7
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+GET http://localhost:5249/agendas-module%20
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2.7
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+GET http://localhost:5249/agendas-module%20
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2.7
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+GET http://localhost:5249/users-module/account
+Authorization: Bearer eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMTgxZGQ0MC03ZWJlLTRjYzYtOGVkZC02ZDIzNzg1N2RlYjAiLCJ1bmlxdWVfbmFtZSI6IjExODFkZDQwLTdlYmUtNGNjNi04ZWRkLTZkMjM3ODU3ZGViMCIsImp0aSI6ImFmNzhiZWYyLTAwNDEtNDVkYi05YmRkLTBiZTY1NjUwODNjOSIsImlhdCI6IjE3Mzk5MTMwODg2MTUiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJ1c2VyIiwicGVybWlzc2lvbnMiOlsiY29uZmVyZW5jZXMiLCJob3N0cyIsInNwZWFrZXJzIiwidGlja2V0cyIsInVzZXJzIl0sIm5iZiI6MTczOTkxMzA4OCwiZXhwIjoxNzM5OTQ5MDg4LCJpc3MiOiJjb25mYWIifQ.mULlQr9Bf-jNrX0n8l4nmI6UFj0r53HaQTdxAqGWu-Y
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2.7
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2025-02-18T221256.200.json
+
+###
+
+POST http://localhost:5249/users-module/account/sign-in
+Content-Type: application/json
+Content-Length: 54
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2.7
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+"email": "user3@confab.io ", "password": "secret1"
+}
+
+<> 2025-02-18T221128.200.json
+
+###
+
+POST http://localhost:5249/users-module/account/sign-up
+Content-Type: application/json
+Content-Length: 159
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2.7
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+"email": "user3@confab.io ", "password": "secret1", "role": "user", "claims": {
+
+"permissions": ["conferences", "hosts", "speakers", "tickets", "users"]
+}
+
+}
+
+###
+
+GET http://localhost:5249/users-module
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2.7
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2025-02-18T221055.200.txt
+
+###
+
+POST http://localhost:5249/users-module/account/sign-in
+Content-Type: application/json
+Content-Length: 54
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2.7
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+"email": "user3@confab.io ", "password": "secret1"
+}
+
+<> 2025-02-18T221047.500.json
+
+###
+
+POST http://localhost:5249/users-module%20/account/sign-in
+Content-Type: application/json
+Content-Length: 54
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2.7
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+"email": "user3@confab.io ", "password": "secret1"
+}
+
+###
+
+POST http://localhost:5249/users-module%20/account/sign-in
+Content-Type: application/json
+Content-Length: 54
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2.7
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+"email": "user3@confab.io ", "password": "secret1"
+}
+
+###
+
+POST http://localhost:5249/users-module%20/account/sign-up
+Content-Type: application/json
+Content-Length: 159
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2.7
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+"email": "user3@confab.io ", "password": "secret1", "role": "user", "claims": {
+
+"permissions": ["conferences", "hosts", "speakers", "tickets", "users"]
+}
+
+}
+
+###
+
+GET http://localhost:5249/users-module%20
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2.7
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+POST http://localhost:5249/users-module%20/account/sign-in
+Content-Type: application/json
+Content-Length: 54
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2.7
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+"email": "user3@confab.io ", "password": "secret1"
+}
+
+###
+
+GET http://localhost:5249/users-module%20
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+POST http://localhost:5249/users-module%20/account/sign-up
+Content-Type: application/json
+Content-Length: 159
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+"email": "user3@confab.io ", "password": "secret1", "role": "user", "claims": {
+
+"permissions": ["conferences", "hosts", "speakers", "tickets", "users"]
+}
+
+}
+
+###
+
+PUT http://localhost:5249/conferences-module/conferences/1577a6d9-2636-4558-9b53-32d9e214bba4
+Content-Type: application/json
+Content-Length: 193
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "name": "Conference #2",
+    "description": "Lorem ipsum",
+    "location": "Test 123",
+    "from": "2024-09-11",
+    "to": "2024-09-15",
+    "participantsLimit": 100,
+    "logoUrl":null
+}
+
+###
+
+PUT http://localhost:5249/conferences-module/conferences/1577a6d9-2636-4558-9b53-32d9e214bba4
+Content-Type: application/json
+Content-Length: 193
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "name": "Conference #2",
+    "description": "Lorem ipsum",
+    "location": "Test 123",
+    "from": "2024-09-11",
+    "to": "2024-09-15",
+    "participantsLimit": 100,
+    "logoUrl":null
+}
+
+<> 2024-09-21T015509.500.json
+
+###
+
+PUT http://localhost:5249/conferences-module/conferences/1577a6d9-2636-4558-9b53-32d9e214bba4
+Content-Type: application/json
+Content-Length: 193
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "name": "Conference #2",
+    "description": "Lorem ipsum",
+    "location": "Test 123",
+    "from": "2024-09-11",
+    "to": "2024-09-15",
+    "participantsLimit": 100,
+    "logoUrl":null
+}
+
+<> 2024-09-21T015420.500.json
+
+###
+
+GET http://localhost:5249/conferences-module/conferences/1577a6d9-2636-4558-9b53-32d9e214bba4
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-21T015417.200.json
+
+###
+
+GET http://localhost:5249/conferences-module/conferences
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-21T015411.200.json
+
+###
+
+POST http://localhost:5249/conferences-module/conferences
+Content-Type: application/json
+Content-Length: 247
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "hostId": "8c780fdf-7694-4893-9ef0-c091fc447763",
+    "name": "Conference #1",
+    "description": "Lorem ipsum",
+    "location": "Test 123",
+    "from": "2024-09-22",
+    "to": "2024-09-24",
+    "participantsLimit": 100,
+    "logoUrl":null
+}
+
+###
+
+GET http://localhost:5249/conferences-module/conferences
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-21T014438.200.json
+
+###
+
+POST http://localhost:5249/conferences-module/conferences
+Content-Type: application/json
+Content-Length: 247
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "hostId": "8c780fdf-7694-4893-9ef0-c091fc447763",
+    "name": "Conference #1",
+    "description": "Lorem ipsum",
+    "location": "Test 123",
+    "from": "2024-09-22",
+    "to": "2024-09-24",
+    "participantsLimit": 100,
+    "logoUrl":null
+}
+
+<> 2024-09-21T014432.500.json
+
+###
+
+POST http://localhost:5249/conferences-module/conferences
+Content-Type: application/json
+Content-Length: 247
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "hostId": "8c780fdf-7694-4893-9ef0-c091fc447763",
+    "name": "Conference #1",
+    "description": "Lorem ipsum",
+    "location": "Test 123",
+    "from": "2024-09-22",
+    "to": "2024-09-29",
+    "participantsLimit": 100,
+    "logoUrl":null
+}
+
+<> 2024-09-21T014425.500.json
+
+###
+
+POST http://localhost:5249/conferences-module/conferences
+Content-Type: application/json
+Content-Length: 247
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "hostId": "8c780fdf-7694-4893-9ef0-c091fc447763",
+    "name": "Conference #1",
+    "description": "Lorem ipsum",
+    "location": "Test 123",
+    "from": "2024-09-22",
+    "to": "2024-09-29",
+    "participantsLimit": 100,
+    "logoUrl":null
+}
+
+<> 2024-09-21T014416.500.json
+
+###
+
+POST http://localhost:5249/conferences-module/conferences
+Content-Type: application/json
+Content-Length: 247
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "hostId": "8c780fdf-7694-4893-9ef0-c091fc447763",
+    "name": "Conference #1",
+    "description": "Lorem ipsum",
+    "location": "Test 123",
+    "from": "2024-09-11",
+    "to": "2024-09-15",
+    "participantsLimit": 100,
+    "logoUrl":null
+}
+
+<> 2024-09-21T014317.500.json
+
+###
+
+POST http://localhost:5249/conferences-module/conferences
+Content-Type: application/json
+Content-Length: 247
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "hostId": "8c780fdf-7694-4893-9ef0-c091fc447763",
+    "name": "Conference #1",
+    "description": "Lorem ipsum",
+    "location": "Test 123",
+    "from": "2024-09-11",
+    "to": "2024-09-15",
+    "participantsLimit": 100,
+    "logoUrl":null
+}
+
+<> 2024-09-21T014113.500.json
+
+###
+
+POST http://localhost:5249/conferences-module/conferences
+Content-Type: application/json
+Content-Length: 247
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "hostId": "8c780fdf-7694-4893-9ef0-c091fc447763",
+    "name": "Conference #1",
+    "description": "Lorem ipsum",
+    "location": "Test 123",
+    "from": "2024-09-11",
+    "to": "2024-09-15",
+    "participantsLimit": 100,
+    "logoUrl":null
+}
+
+<> 2024-09-21T014044.500.json
+
+###
+
+POST http://localhost:5249/conferences-module/conferences
+Content-Type: application/json
+Content-Length: 245
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "hostId": 8c780fdf-7694-4893-9ef0-c091fc447763,
+    "name": "Conference #1",
+    "description": "Lorem ipsum",
+    "location": "Test 123",
+    "from": "2024-09-11",
+    "to": "2024-09-15",
+    "participantsLimit": 100,
+    "logoUrl":null
+}
+
+<> 2024-09-21T013944.400.json
+
+###
+
+POST http://localhost:5249/conferences-module/conferences
+Content-Type: application/json
+Content-Length: 219
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "hostId": "{hostId}",
+    "name": "Conference #1",
+    "description": "Lorem ipsum",
+    "location": "Test 123",
+    "from": "2024-09-11",
+    "to": "2024-09-15",
+    "participantsLimit": 100,
+    "logoUrl":null
+}
+
+<> 2024-09-21T013849.400.json
+
+###
+
+POST http://localhost:5249/conferences-module/conferences
+Content-Type: application/json
+Content-Length: 247
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "hostId": "8c780fdf-7694-4893-9ef0-c091fc447763",
+    "name": "Conference #1",
+    "description": "Lorem ipsum",
+    "location": "Test 123",
+    "from": "2024-09-11",
+    "to": "2024-09-15",
+    "participantsLimit": 100,
+    "logoUrl":null
+}
+
+<> 2024-09-21T013833.500.json
+
+###
+
+PUT http://localhost:5249/conferences-module/hosts/8c780fdf-7694-4893-9ef0-c091fc447763
+Content-Type: application/json
+Content-Length: 25
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "name": "Host #2"
+}
+
+###
+
+GET http://localhost:5249/conferences-module/hosts
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-21T013808.200.json
+
+###
+
+POST http://localhost:5249/conferences-module/hosts
+Content-Type: application/json
+Content-Length: 59
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "name": "Host #1",
+    "description": "Lorem ipsum"
+}
+
+###
+
+GET http://localhost:5249/conferences-module
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-21T013732.200.txt
+
+###
+
+DELETE http://localhost:5249/conferences-module/hosts/73335db4-18cf-4451-8094-2d3059561b80
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-08T234057.400.json
+
+###
+
+DELETE http://localhost:5249/conferences-module/hosts/73335db4-18cf-4451-8094-2d3059561b80
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-08T232627.400.json
+
+###
+
+DELETE http://localhost:5249/conferences-module/hosts/73335db4-18cf-4451-8094-2d3059561b80
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+PUT http://localhost:5249/conferences-module/hosts/73335db4-18cf-4451-8094-2d3059561b80
+Content-Type: application/json
+Content-Length: 25
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "name": "Host #1"
+}
+
+###
+
+DELETE http://localhost:5249/conferences-module/hosts/4234234235
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+DELETE http://localhost:5249/conferences-module/hosts/4234234235
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+DELETE http://localhost:5249/conferences-module/hosts/4234234235
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+GET http://localhost:5249/conferences-module/hosts
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-08T232529.200.json
+
+###
+
+POST http://localhost:5249/conferences-module/hosts
+Content-Type: application/json
+Content-Length: 59
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "name": "Host #1",
+    "description": "Lorem ipsum"
+}
+
+###
+
+GET http://localhost:5249/conferences-module
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-08T232520.200.txt
+
+###
+
+PUT http://localhost:5249/conferences-module/hosts/4234234235
+Content-Type: application/json
+Content-Length: 25
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "name": "Host #1"
+}
+
+###
+

@@ -1,0 +1,6 @@
+@Confab.APIGateway_HostAddress = http://localhost:5076
+
+GET {{Confab.APIGateway_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,11 @@
+{
+  "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+  "title": "One or more validation errors occurred.",
+  "status": 400,
+  "errors": {
+    "$.hostId": [
+      "The JSON value could not be converted to System.Guid. Path: $.hostId | LineNumber: 1 | BytePositionInLine: 24."
+    ]
+  },
+  "traceId": "00-fa9d7bfad52820c50c9f3d1191e5b0d4-9162dfad27120e1c-00"
+}

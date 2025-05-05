@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\Shared\Confab.Shared.Infrastructure\Confab.Shared.Infrastructure.csproj" />
+      <ProjectReference Include="..\Confab.Modules.Agendas.Application\Confab.Modules.Agendas.Application.csproj" />
+      <ProjectReference Include="..\Confab.Modules.Agendas.Domain\Confab.Modules.Agendas.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="EF\Migrations\" />
+    </ItemGroup>
+
+</Project>

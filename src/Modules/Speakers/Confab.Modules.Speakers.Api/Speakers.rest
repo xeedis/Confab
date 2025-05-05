@@ -1,0 +1,35 @@
+@url = http://localhost:5249/speakers-module
+@speakerId = 8deaf97d-27a3-498b-a006-cfe4cb0b170a
+
+@conferenceId = 73335db4-18cf-4451-8094-2d3059561b80
+
+###
+GET {{url}}
+
+###
+POST {{url}}/speakers
+Content-Type: application/json
+
+{
+    "email": "coscos@gmail.com",
+    "fullName": "Lorem ipsum",
+    "bio": "csdoihfosdhf",
+    "description": "fas9dfyhasdfna'psdfj[apwierjfpaijew]",
+    "avatarUrl": "coscos"
+}
+
+###
+GET {{url}}/speakers
+
+###
+GET {{url}}/speakers/{{speakerId}}
+
+###
+PUT {{url}}/speakers/{{speakerId}}
+Content-Type: application/json
+
+{
+    "email": "coscos@gmail.com",
+    "bio": "bio #2",
+    "fullName": "Speaker #2"
+}

@@ -1,0 +1,11 @@
+{
+  "response": {
+    "errors": [
+      {
+        "code": "error",
+        "message": "There was an error"
+      }
+    ]
+  },
+  "statusCode": 500
+}

@@ -1,0 +1,17 @@
+{
+  "accessToken": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMTgxZGQ0MC03ZWJlLTRjYzYtOGVkZC02ZDIzNzg1N2RlYjAiLCJ1bmlxdWVfbmFtZSI6IjExODFkZDQwLTdlYmUtNGNjNi04ZWRkLTZkMjM3ODU3ZGViMCIsImp0aSI6ImFmNzhiZWYyLTAwNDEtNDVkYi05YmRkLTBiZTY1NjUwODNjOSIsImlhdCI6IjE3Mzk5MTMwODg2MTUiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJ1c2VyIiwicGVybWlzc2lvbnMiOlsiY29uZmVyZW5jZXMiLCJob3N0cyIsInNwZWFrZXJzIiwidGlja2V0cyIsInVzZXJzIl0sIm5iZiI6MTczOTkxMzA4OCwiZXhwIjoxNzM5OTQ5MDg4LCJpc3MiOiJjb25mYWIifQ.mULlQr9Bf-jNrX0n8l4nmI6UFj0r53HaQTdxAqGWu-Y",
+  "refreshToken": "",
+  "expires": 1739949088615,
+  "id": "1181dd40-7ebe-4cc6-8edd-6d237857deb0",
+  "role": "user",
+  "email": "user3@confab.io ",
+  "claims": {
+    "permissions": [
+      "conferences",
+      "hosts",
+      "speakers",
+      "tickets",
+      "users"
+    ]
+  }
+}

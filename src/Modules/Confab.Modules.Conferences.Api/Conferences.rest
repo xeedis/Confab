@@ -1,0 +1,76 @@
+@url = http://localhost:5249/conferences-module
+@hostId = 8c780fdf-7694-4893-9ef0-c091fc447763
+
+@conferenceId = 1577a6d9-2636-4558-9b53-32d9e214bba4
+
+@accessToken = eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1NmIwODM0Mi01ZWQzLTRkZmEtOWViNi0yNDhlNDBlYThjZmIiLCJ1bmlxdWVfbmFtZSI6IjU2YjA4MzQyLTVlZDMtNGRmYS05ZWI2LTI0OGU0MGVhOGNmYiIsImp0aSI6IjA5MjE4ZDk0LWUzYWMtNDFlZC04N2EzLThhNGI2NzE2ZjgwMiIsImlhdCI6IjE3MjcyMDU2MjI0NzEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJ1c2VyIiwicGVybWlzc2lvbnMiOlsiY29uZmVyZW5jZXMiLCJob3N0cyIsInNwZWFrZXJzIiwidGlja2V0cyIsInVzZXJzIl0sIm5iZiI6MTcyNzIwNTYyMiwiZXhwIjoxNzI3MjQxNjIyLCJpc3MiOiJjb25mYWIifQ.MnczsyukFF1DbrcnzXLi0ljh7igjuHqYx9CqdycIYWM
+
+###
+GET {{url}}
+
+###
+POST {{url}}/hosts
+Content-Type: application/json
+
+{
+    "name": "Host #1",
+    "description": "Lorem ipsum"
+}
+
+###
+GET {{url}}/hosts
+
+###
+GET {{url}}/hosts/{{hostId}}
+
+###
+PUT {{url}}/hosts/{{hostId}}
+Authorization: Bearer {{accessToken}}
+Content-Type: application/json
+
+{
+    "name": "Host #2"
+}
+
+###
+DELETE {{url}}/hosts/{{hostId}}
+Authorization: Bearer {{accessToken}}
+
+###
+POST {{url}}/conferences
+Authorization: Bearer {{accessToken}}
+Content-Type: application/json
+
+{
+    "hostId": "{{hostId}}",
+    "name": "Conference #3",
+    "description": "Lorem ipsum",
+    "location": "Test 123",
+    "from": "2024-09-25",
+    "to": "2024-09-27",
+    "participantsLimit": 100,
+    "logoUrl":null
+}
+
+###
+GET {{url}}/conferences
+
+###
+GET {{url}}/conferences/{{conferenceId}}
+
+###
+PUT {{url}}/conferences/{{conferenceId}}
+Content-Type: application/json
+
+{
+    "name": "Conference #1",
+    "description": "Lorem ipsum",
+    "location": "Test 123",
+    "from": "2024-09-25",
+    "to": "2024-09-27",
+    "participantsLimit": 100,
+    "logoUrl":null
+}
+
+###
+DELETE {{url}}/conferences/{{conferenceId}}
